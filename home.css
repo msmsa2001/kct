@@ -38,7 +38,7 @@ body {
     justify-content: space-between;
     align-items: center;
 }
-.navbar nav .logo,
+.navbar nav a .logo,
 .nav2 .logo {
     display: flex;
     gap: 0.5rem;
@@ -46,7 +46,7 @@ body {
     align-items: center;
 }
 .navbar nav .logo h1,
-.nav2 .logo h1 {
+.nav2 a .logo h1 {
     font-family: Times New Roman;
     font-size: 16px;
     font-weight: 400;
@@ -160,6 +160,7 @@ line-height: 40px;
     font-weight: 500;
     box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.25);
     width: 100%;
+    align-items: center;
 }
 @media (max-width: 1153px) {
     .container2 {
@@ -415,6 +416,9 @@ line-height: 40px;
     .container3 .sec-1 img {
         height: 22rem;
     }
+    .container3 .sec-1 .overlayImage p{
+        margin-top: -8px !important;
+      }
 }
 @media screen and (max-width:600px) {
     .container3 {
@@ -766,7 +770,7 @@ line-height: 40px;
         border: 1px solid var(--grey-text);
         height: 30px; 
         border-radius: 50px;
-        padding: 1.5rem 1.5rem;
+        padding: 1.66rem 1.5rem;
 }
 .container8 .inner-cont8 .Input-field input::placeholder{
     color: #6C757D;
@@ -776,11 +780,11 @@ line-height: 40px;
 .container8 .inner-cont8 .Input-field button{
     border: 1px solid var(--blue-color);
     border-radius: 50px;
-        right: 3px; 
+        right: 0.4rem; 
         position: absolute;
         background-color: var(--white);
         z-index: 2; 
-        top: 3px; 
+        top: 0.3rem; 
         cursor: pointer; 
         padding: 0.7rem 1.5rem;
         font-size: 14px;
@@ -1448,7 +1452,7 @@ padding: 1rem;}
 }
 .footer .ktc .one .ktc-logo {
     display: flex;
-    align-items: self-end;
+    /* align-items: self-end; */
     gap: 0.7rem;
 }
 .footer .ktc .one .ktc-logo h4 {
@@ -1467,7 +1471,8 @@ padding: 1rem;}
     font-size: 16px;
     line-height: 22px;
     color: rgba(255, 255, 255, 1);
-    margin-top: 10px !important;
+    margin-top: 1.3rem !important;
+    margin-bottom: 0.7rem !important;
 }
 .footer .ktc .one .subscribe {
     display: flex;
