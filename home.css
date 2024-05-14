@@ -943,10 +943,10 @@ padding: 0 5rem;
         padding: 2rem 3rem;
     }
     .container10 {
-        padding: 0px 4rem;
+        padding: 0px 2rem;
     }
-    .container4 .cards{
-    gap: 1rem;
+.container4 .cards{
+    gap: 0;
 }
 .container3 {
     gap: 1rem
@@ -1093,8 +1093,7 @@ padding: 1rem;}
 }
 @media screen and (max-width:650px) {
     .container3{
-        padding: 2rem;
-        grid-template-columns: auto;
+        padding: 2rem 2rem 0 2rem;        grid-template-columns: auto;
     }
     .blur-overlay {
         bottom: 0rem;
@@ -1146,7 +1145,7 @@ padding: 1rem;}
     }
     .container4 h2 {
         font-size: 32px;
-        padding: 3.5rem 0 0 2rem;
+        padding: 0.5rem 0 0 2rem;
     }
     .cont11-row1 {
         gap: 5px;
@@ -1535,6 +1534,12 @@ padding: 1rem;}
     }
     .footer .ktc .one .subscribe input{
         padding: 0.5rem 0rem 0.5rem 0.5rem; 
+}
+.footer .ktc .one p {
+    margin-bottom: 0;
+}
+.footer{
+    gap: 2rem;
 }
 }
 @media screen and (max-width:320px) {

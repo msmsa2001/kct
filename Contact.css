@@ -306,6 +306,7 @@ textarea {
     border-radius: 12px;
     color: var(--white);
     font-size: 16px;
+    cursor: pointer;
 }
 
 @media screen and (max-width: 1800px) {
@@ -635,6 +636,25 @@ textarea {
     .footer .ktc .one .subscribe input{
         padding: 0.5rem 0rem 0.5rem 0.5rem; 
 }
+.navbar{
+    padding: 1.3rem;
+}
+.section2 .container .box {
+    padding: 1rem 1rem !important;
+}
+
+.navbar {
+    padding: 1.3rem;
+}
+
+.about-us .head {
+    padding: 3rem 0 3rem 4rem;
+}
+
+.footer {
+    gap: 2rem;
+}
+
 }
 @media screen and (max-width:320px) {
     .footer .ktc .one .subscribe button {
@@ -646,4 +666,7 @@ textarea {
 .footer{
     padding: 3rem 0.8rem;
 }
+}
+.phone .phone-content a{
+    text-decoration: none;
 }
