@@ -15,6 +15,7 @@
     --grey-text2: #404040;
     --red-color: #C52620;
     --background-color: #22262F;
+    --background-color2: #3D4655;
 }
 
 /*about us*/
@@ -146,7 +147,7 @@ background-color: transparent;
     }
 }
 .about-us .head {
-    background-color: var(--background-color);
+    background-color: var(--background-color2);
     padding: 5rem 0 4rem 7rem;
 }
 
