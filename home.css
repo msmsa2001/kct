@@ -692,8 +692,8 @@ line-height: 40px;
 }
 @media screen and (max-width:530px) {
     .container7 .sec-2 .sec-2-image img {
-        width: 200px;
-        height: 155px;
+        width: 185px;
+        height: 145px;
     }
 }
 @media screen and (max-width:474px) {
@@ -951,7 +951,7 @@ padding: 0 5rem;
         padding: 0px 2rem;
     }
 .container4 .cards{
-    gap: 0;
+    gap: 1rem;
 }
 .container3 {
     gap: 1rem
@@ -1526,7 +1526,9 @@ img {vertical-align: middle;}
 .active, .dot:hover {
   background-color: #717171;
 }
-
+.container6 {
+    width: 100%;
+}
 /* On smaller screens, decrease text size */
 @media only screen and (max-width: 300px) {
   .prev, .next,.text {font-size: 11px}
