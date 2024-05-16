@@ -232,7 +232,7 @@ background-color: transparent;
     border-radius: 4px;
 }
 
-input,
+.input,
 textarea {
     background-color: var(--grey-backgroun-color);
     border-radius: 4px;
@@ -403,7 +403,7 @@ textarea {
     .phone-content .para1, .phone-content .para2 {
         font-size: 15px;
     }
-    input, textarea {
+    .input, textarea {
         width: 24rem;
     }
 }
@@ -422,7 +422,7 @@ textarea {
     .form{
         padding: 2rem;
     }
-    input, textarea {
+    .input, textarea {
         width: 22rem;
     }
     .phone {
@@ -439,7 +439,7 @@ textarea {
         .contact-container2 {
             padding: 1rem 6rem;
         }
-        input, textarea {
+        .input, textarea {
             width: 30rem;
         }
         .phone {
@@ -463,7 +463,7 @@ textarea {
     .contact-container2 {
         padding: 1rem 3rem;
     }
-    input, textarea {
+    .input, textarea {
         width: 25rem;
     }
 }
@@ -471,7 +471,7 @@ textarea {
     .phone {
         grid-template-columns: 20% auto;
     }
-    input, textarea {
+    .input, textarea {
         width: 23rem;
     }
     .sec-1-2 .phone i {
@@ -487,7 +487,7 @@ textarea {
     .phone-content .title {
         font-size: 17px;
     }
-    input, textarea {
+    .input, textarea {
         width: 20rem;
         padding: 1em 1em;
     }
@@ -503,7 +503,7 @@ textarea {
 }
 }
 @media screen and (max-width: 405px) {
-    input, textarea {
+    .input, textarea {
         width: 17rem;
     }
     .contact-container2 {
@@ -572,7 +572,7 @@ textarea {
     display: flex;
     margin-bottom: 0.6rem;
 }
-.footer .ktc .one .subscribe input {
+.footer .ktc .one .subscribe #newsletter {
     padding: 0.5rem 2rem 0.5rem 1rem;
     border-top-left-radius: 0.5rem;
     border-bottom-left-radius: 0.5rem;
@@ -598,16 +598,13 @@ textarea {
     padding: 0.8rem;
 }
 .footer-pvt {
-    display: grid;
-    place-items: center;
-    background-color: var(--background-color);
+    background-color: #22262f;
 }
 .footer-pvt p {
-    color: gray;
+    color: rgba(255, 255, 255, 1);
     border-top: 1.5px solid var(--grey-text2);
-    width: 97%;
     text-align: center;
-    padding: 1rem 1rem 0rem 1rem;
+    padding: 1rem 0rem;
 }
 .footer .ktc .one a{
     text-decoration: none;

@@ -164,13 +164,13 @@ padding-left: 7rem;
     margin-top: 3rem;
 
 }
-.gallery2-para1{
+.GalleryConatiner2 .sec-1 .gallery2-para1{
     font-size: 20px;
     letter-spacing: 2px;
     font-weight: 700;
     color: var(--gallary-title-color);
 }
-.gallery2-para1 span{
+.GalleryConatiner2 .sec-1 .gallery2-para1 span{
     color:var(--blue-color);
 }
 .gallary{
@@ -183,21 +183,24 @@ padding-left: 7rem;
     height: 0px;
     border: 2px var(--blue-color) solid
 }
-.gallery2-para2{
-    font-size: 36px;
+.GalleryConatiner2 .sec-1 .gallery2-para2{
+    font-size: 34px;
     font-weight: 700;
     color: var(--black-color-2);
     width: 80%;
 }
-.gallery2-para2 span{
+.GalleryConatiner2 .sec-1 .gallery2-para2 span{
     color: var(--red-color);
 }
-.gallery2-para3{
-    font-weight: 600;
-    font-size: 26px;
+.GalleryConatiner2 .sec-1 .gallery2-para3{
+    font-weight: 500;
+    font-size: 22px;
     color: var(--gallary-background-color);
     width: 80%;
 }
+
+
+
 .cont11-row1{
     display: grid;
     gap: 1rem;
@@ -223,10 +226,10 @@ padding-left: 7rem;
 
 .pagination{
     width: max-content;
-	/* float: left; */
 	text-align: center;
-    border: 2px solid var(--grey-color);
     border-radius: 5px;
+    border: 1px solid var(--grey-color);
+    box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, 0.25);
 }
 .paginationBtn{
     display: flex;
@@ -234,32 +237,31 @@ padding-left: 7rem;
 }
 .pagination div{
 	display: inline-block;
-	margin:0 15px;
+	margin:0 7px;
 }
 .page-button {
     display: inline-block;
     margin: 0 5px;
-    padding: 18px 15px;
+    padding: 12px 15px;
     cursor: pointer;
-    font-size: 22px;
+    border-radius: 4px;
+    font-size: 16px;
     font-weight: 400;
+    border: 1.6px solid var(--gray-color);
     color: #898989;
 }
-
+.page-button:hover{
+color: var(--blue-color);
+}
 .page-button.active {
     border: 2px solid var(--blue-color);
     border-radius: 4px;
     color: var(--blue-color);
 }
-    /* .pagination .prev i,
-    .pagination .next i {
-        margin-right: 5px; 
-    } */
 .page-button.disabled {
     opacity: 0.5;
     cursor: not-allowed;
 }
-
 .prev, .next {
     margin: 0 5px;
     padding: 5px 10px;
@@ -286,22 +288,9 @@ padding-left: 7rem;
     margin-bottom: 6rem;
     margin-top: 0rem;
 }
-
-/* .page-button {
-    display: inline-block;
-    margin: 0 5px;
-    padding: 5px 10px;
-    border: 1px solid #ccc;
-    cursor: pointer;
+.GalleryConatiner2 p{
+    margin-top: 1rem;
 }
-
-.page-button.active {
-    border-color: var(--blue-color);
-    border-radius: 4px;
-}
-
-
-*/
 @media screen and (max-width: 1090px) {
     .GalleryConatiner3 {
         padding: 2rem 4rem;
@@ -333,7 +322,8 @@ padding-left: 7rem;
     padding: 1rem 3rem;
 }
 .paginationBtn {
-    margin-top: -1rem;
+    margin-top: -3rem;
+    margin-bottom: 2rem;
 }
 .GalleryConatiner3 {
     padding: 1rem 2rem;
@@ -392,6 +382,24 @@ title .para1 {
     .GalleryConatiner3 {
         padding: 1rem 2rem;
     }
+    .GalleryConatiner2 .sec-1 .gallery2-para2 {
+        width: 90%;
+        font-size: 30px;
+}
+.GalleryConatiner2 .sec-1 .gallery2-para3 {
+    font-size: 20px;
+    width: 90%;
+}
+.GalleryConatiner2 .sec-1 .gallery2-para1 {
+    font-size: 17px;
+}
+.Styleline {
+    width: 72px;
+    border: 1px var(--blue-color) solid;
+}
+.gallary{
+    align-items: baseline;
+}
     .pagination div {
         margin: 0px 5px;
     }
@@ -438,6 +446,17 @@ title .para1 {
     .GalleryConatiner3 {
             padding: 1rem 1rem;
         }
+        .GalleryConatiner2 .sec-1 .gallery2-para2 {
+            width: 100%;
+            font-size: 22px;
+        }
+        .GalleryConatiner2 .sec-1 .gallery2-para1 {
+            font-size: 14px;
+        }
+        .GalleryConatiner2 .sec-1 .gallery2-para3 {
+            font-size: 17px;
+            width: 100%;
+        }
 }
 @media screen and (max-width: 465px) {
 .pagination div {
@@ -446,6 +465,10 @@ title .para1 {
 .page-button {
     padding: 12px 11px;
     font-size: 16px;
+}
+.paginationBtn {
+    margin-top: -4rem;
+    margin-bottom: 1rem;
 }
 }
 
@@ -475,7 +498,18 @@ title .para1 {
     .GalleryConatiner1 {
         padding-left: 2rem;
     }
-
+    .GalleryConatiner2 p {
+        margin-top: 10px;
+    }
+    .GalleryConatiner2 .sec-1 .gallery2-para2 {
+        font-size: 19px;
+    }
+    .GalleryConatiner2 .sec-1 .gallery2-para3 {
+        font-size: 14px;
+    }
+    .Styleline {
+        width: 60px;
+    }
 }
 @media screen and (max-width: 320px) {
 .pagination div {
@@ -580,16 +614,13 @@ title .para1 {
     padding: 0.8rem;
 }
 .footer-pvt {
-    display: grid;
-    place-items: center;
-    background-color: var(--background-color);
+    background-color: #22262f;
 }
 .footer-pvt p {
-    color: gray;
+    color: rgba(255, 255, 255, 1);
     border-top: 1.5px solid var(--grey-text2);
-    width: 97%;
     text-align: center;
-    padding: 1rem 1rem 0rem 1rem;
+    padding: 1rem 0rem;
 }
 .footer .ktc .one a{
     text-decoration: none;

@@ -287,16 +287,13 @@ margin-top: 1rem;
     padding: 0.8rem;
 }
 .footer-pvt {
-    display: grid;
-    place-items: center;
-    background-color: var(--background-color);
+    background-color: #22262f;
 }
 .footer-pvt p {
-    color: gray;
+    color: rgba(255, 255, 255, 1);
     border-top: 1.5px solid var(--grey-text2);
-    width: 97%;
     text-align: center;
-    padding: 1rem 1rem 0rem 1rem;
+    padding: 1rem 0rem;
 }
 .footer .ktc .one a{
     text-decoration: none;

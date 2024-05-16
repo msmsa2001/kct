@@ -88,7 +88,7 @@
         </div>
     </div>
 
-    <div class="GalleryConatiner3">
+    <!-- <div class="GalleryConatiner3">
         <div class="gallery-items">
             <div class="gallary1">
             <div class="cont11-row1">
@@ -113,13 +113,12 @@
             </div>
             <div class="cont11-row2">
                 <img src="assest/KCT img 13.png" alt="">
-                <img src="assest/KCT img 14.png" alt="">
                 <img src="assest/KCT img 14.jpg" alt="">
                 <img src="assest/KCT img 15.jpg" alt="">
+                <img src=" assest/KCT img 16.jpg" alt="">
             </div>
         </div>
 
-            <!-- I want add the next page -->
             <div class="gallary3">
             <div class="cont11-row1">
                 <img src="assest/KCT img 16.jpg" alt="">
@@ -157,9 +156,77 @@
             </div>
                
         </div>
+    </div> -->
+    <div class="GalleryConatiner3">
+        <div class="gallery-items">
+            <div class="gallary1">
+            <div class="cont11-row1">
+                <img src="assests/radiance img 1 (2).jpeg" alt="">
+                <img src="assests/radiance img 1 (3).jpeg" alt="">
+                <img src="assests/radiance img 1 (4).jpeg" alt="">
+                <img src="assests/radiance img 1 (5).jpeg" alt="">
+            </div>
+            <div class="cont11-row2">
+                <img src="assests/radiance img 1 (6).jpeg" alt="">
+                <img src="assests/radiance img 1 (7).jpeg" alt="">
+                <img src="assests/radiance img 1 (8).jpeg" alt="">
+                <img src="assests/radiance img 1 (9).jpeg" alt="">
+            </div>
+        </div>
+        <div class="gallary2">
+            <div class="cont11-row1">
+                <img src="assests/radiance img 1 (10).jpeg" alt="">
+                <img src="assests/radiance img 1 (11).jpeg" alt="">
+                <img src="assests/radiance img 1 (12).jpeg" alt="">
+                <img src="assests/radiance img 1 (13).jpeg" alt="">
+            </div>
+            <div class="cont11-row2">
+                <img src=" assests/radiance img 1 (14).jpeg" alt="">
+                <img src=" assests/radiance img 1 (15).jpeg" alt="">
+                <img src=" assests/radiance img 1 (16).jpeg" alt="">
+                <img src=" assests/radiance img 1 (17).jpeg" alt="">
+            </div>
+        </div>
+
+            <!-- I want add the next page -->
+            <div class="gallary3">
+            <div class="cont11-row1">
+                <img src="assests/radiance img 1 (18).jpeg" alt="">
+                <img src="assests/radiance img 1 (19).jpeg" alt="">
+                <img src="assests/radiance img 1 (20).jpeg" alt="">
+                <img src="assests/radiance img 1 (21).jpeg" alt="">
+            </div>
+            <div class="cont11-row2">
+                <img src="assests/radiance img 1 (22).jpeg" alt="">
+                <img src="assests/radiance img 1 (23).jpeg" alt="">
+                <img src="assests/radiance img 1 (24).jpeg" alt="">
+                <img src="assests/radiance img 1 (25).jpeg" alt="">
+            </div>
+            </div>
+            <div class="gallary4">
+            <div class="cont11-row1">
+                <img src="assests/radiance img 1 (26).jpeg" alt="">
+                <img src="assests/radiance img 1 (27).jpeg" alt="">
+                <img src="assests/radiance img 1 (28).jpeg" alt="">
+                <img src="assests/radiance img 1 (29).jpeg" alt="">
+            </div>
+            <div class="cont11-row2">
+                <img src="assests/radiance img 1 (30).jpeg" alt="">
+                <img src="assests/radiance img 1 (31).jpeg" alt="">
+                <img src="assests/radiance img 1 (32).jpeg" alt="">
+                <img src="assests/radiance img 1 (33).jpeg" alt="">
+            </div>
+            </div>
+        </div>
+        <div class="paginationBtn">
+            <div class="pagination">
+                <div class="prev"><i class="fas fa-chevron-left"></i> Prev</div>
+                <div class="page">Page <span class="page-num"></span></div>
+                <div class="next">Next <i class="fas fa-chevron-right"></i></div>
+            </div>
+               
+        </div>
     </div>
-
-
     <!-- footer -->
     <div class="footer">
         <div class="ktc">
@@ -248,7 +315,7 @@
         </div>
     </div>
     <div class="footer-pvt">
-        <p>© 2020 Khidmat ALL RIGHTS RESERVED.</p>
+        <p>Powered By IT Solutions Pvt. Ltd.</p>
     </div>
 
    
@@ -258,7 +325,7 @@
 
     <!-- javascript for gallery -->
     
-    <script>
+    <!-- <script>
         const galleryItems = document.querySelectorAll(".gallery-items img");
         const prev = document.querySelector(".prev");
         const next = document.querySelector(".next");
@@ -349,9 +416,99 @@
             updatePagination();
         };  
     </script>
+     -->
+
+     <script>
+        const galleryItems = document.querySelectorAll(".gallery-items img");
+        const prev = document.querySelector(".prev");
+        const next = document.querySelector(".next");
+        const paginationContainer = document.querySelector(".pagination");
+        const page = document.querySelector(".page-num");
+        let currentPage = 1;
+        const itemsPerPage = [8, 4]; // Define number of items per page for each state
+        let currentState = 0;
+        const maxDisplayedPages = 3; // Number of page buttons to display at a time
     
-
-
+        function showItems() {
+            const startIndex = (currentPage - 1) * itemsPerPage[currentState];
+            const endIndex = startIndex + itemsPerPage[currentState];
+    
+            galleryItems.forEach((item, index) => {
+                if (index >= startIndex && index < endIndex) {
+                    item.style.display = "block";
+                } else {
+                    item.style.display = "none";
+                }
+            });
+    
+            page.textContent = currentPage;
+        }
+    
+        function updatePagination() {
+            const totalPages = Math.ceil(galleryItems.length / itemsPerPage[currentState]);
+    
+            // Remove existing page buttons
+            while (paginationContainer.firstChild) {
+                paginationContainer.removeChild(paginationContainer.firstChild);
+            }
+    
+            // Calculate start and end index for page buttons
+            let startPage = Math.max(currentPage - Math.floor(maxDisplayedPages / 2), 1);
+            let endPage = Math.min(startPage + maxDisplayedPages - 1, totalPages);
+    
+            // Adjust startPage and endPage if not enough pages to display
+            if (endPage - startPage + 1 < maxDisplayedPages) {
+                startPage = Math.max(endPage - maxDisplayedPages + 1, 1);
+            }
+    
+            // Add previous button
+            const prevButton = document.createElement("div");
+            prevButton.textContent = "Prev";
+            prevButton.classList.add("page-button");
+            prevButton.addEventListener("click", function () {
+                if (currentPage > 1) {
+                    currentPage--;
+                    showItems();
+                    updatePagination();
+                }
+            });
+            paginationContainer.appendChild(prevButton);
+    
+            // Add page buttons
+            for (let i = startPage; i <= endPage; i++) {
+                const pageButton = document.createElement("div");
+                pageButton.textContent = i;
+                pageButton.classList.add("page-button");
+                if (i === currentPage) {
+                    pageButton.classList.add("active");
+                }
+                pageButton.addEventListener("click", function () {
+                    currentPage = i;
+                    showItems();
+                    updatePagination();
+                });
+                paginationContainer.appendChild(pageButton);
+            }
+    
+            // Add next button
+            const nextButton = document.createElement("div");
+            nextButton.textContent = "Next";
+            nextButton.classList.add("page-button");
+            nextButton.addEventListener("click", function () {
+                if (currentPage < totalPages) {
+                    currentPage++;
+                    showItems();
+                    updatePagination();
+                }
+            });
+            paginationContainer.appendChild(nextButton);
+        }
+    
+        window.onload = function () {
+            showItems();
+            updatePagination();
+        };  
+    </script>
 
     <!-- javascript code for navbar ends  -->
     <script>
