@@ -1061,7 +1061,7 @@ padding: 1rem;}
     .container2{
         /* display: grid; */
         grid-template-columns: auto;
-        padding: 0 5rem;
+        padding: 0 5rem !important;
     }
     .container2 .box{
         align-items: center;
