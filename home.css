@@ -252,7 +252,7 @@ line-height: 40px;
         font-size: 20px;
     }
     .container2 .box .box-content .below-number {
-        font-size: 7px;
+        font-size: 9px;
     }
    .container2 .box img{
         width: 40px;
@@ -355,7 +355,7 @@ line-height: 40px;
     color: var(--red-color);
     font-weight: 800;
 }
-.container3 .sec-2 #learn-more-btn {
+.container3 .sec-2 a #learn-more-btn {
     border: 2px solid var(--blue-color);
     width: max-content;
     font-size: 16px;
@@ -365,6 +365,14 @@ line-height: 40px;
     padding: 8px 22px;
     border-radius: 30px;
     cursor: pointer;
+}
+.container3 .sec-2 a{
+    text-decoration: none;
+}
+.container3 .sec-2 a #learn-more-btn:hover{
+    background-color: var(--blue-color);
+    color: #fff;
+    transition: .3s ease-out;
 }
 .container3 .sec-2{
     display: flex;
@@ -413,6 +421,7 @@ line-height: 40px;
 }
 .container3 .sec-2 #learn-more-btn {
     padding: 6px 18px;
+    margin-top: 12px !important
 }
 }
 @media screen and (max-width:700px) {
@@ -717,18 +726,18 @@ line-height: 40px;
         font-size: 14px;
     }
     .container7 .sec-1 .content2 {
-        font-size: 11px;
+        font-size: 13px;
         margin-top: 3px !important;
     }
     .container7 .sec-1 .content1 {
-        font-size: 14px;
+        font-size: 15px;
         margin-top: 4px !important;
     }
     .container7 .sec-1 .paragraph {
         font-size: 22px;
     }
     .container7 .sec-2 .sec-2-para {
-        font-size: 11px;
+        font-size: 13px;
         margin-bottom: 1rem !important;
     }
     .container7 .sec-1 .phone-sec .detail-sec #query {
@@ -1105,7 +1114,9 @@ padding: 1rem;}
 }
 @media screen and (max-width:650px) {
     .container3{
-        padding: 2rem 2rem 0 2rem;        grid-template-columns: auto;
+        padding: 2rem 2rem 0 2rem;        
+        grid-template-columns: auto;
+        margin-top: 1rem !important;
     }
     .blur-overlay {
         bottom: 0rem;
