@@ -316,7 +316,7 @@ line-height: 40px;
     font-size: 20px;
     font-family: 'nunito sans';
     font-weight: 600;
-    margin-top: -18px !important;
+    margin-top: -8px !important;
     margin-left: 3rem !important;
   }
   .container3 .sec-1 .overlayImage .count{
@@ -387,6 +387,9 @@ line-height: 40px;
         grid-template-columns: 43% 54%;
     gap: 2rem;
     }
+    .container3 .sec-1 .overlayImage p {
+    margin-top: -14px !important;
+    }
 }
 @media screen and (max-width:800px) {
     .container3 .sec-2 .about-us #about-head {
@@ -419,6 +422,9 @@ line-height: 40px;
     }
     .container3 .sec-1 img {
         height: 22rem;
+    }
+    .container3 .sec-1 .overlayImage p {
+        margin-top: -8px !important;
     }
 }
 @media screen and (max-width:600px) {
@@ -1339,6 +1345,7 @@ padding: 1rem;}
     padding: 5.5rem 5.5rem 3rem;
     position: relative;
     width: 100%;
+    overflow-x: hidden;
 }
 .container6 .title h3 {
     font-size: 16px;
