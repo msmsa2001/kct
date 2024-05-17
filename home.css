@@ -219,7 +219,7 @@ line-height: 40px;
         margin-top: -7rem !important;
     }
     .container2 .box .box-content .below-number {
-        font-size: 12px;
+        font-size: 14px;
     }
     .container2 .box{
         padding: 1rem 1rem;
@@ -238,7 +238,7 @@ line-height: 40px;
         font-size: 28px;
     }
    .container2 .box .box-content .below-number {
-        font-size: 10px;
+        font-size: 12px;
     }
     .container1 .para1, .container1 .para2 {
         font-size: 1.2rem;
@@ -252,7 +252,7 @@ line-height: 40px;
         font-size: 20px;
     }
     .container2 .box .box-content .below-number {
-        font-size: 9px;
+        font-size: 12px;
     }
    .container2 .box img{
         width: 40px;
@@ -355,6 +355,9 @@ line-height: 40px;
     color: var(--red-color);
     font-weight: 800;
 }
+.container3 .sec-2 a{
+    text-decoration: none;
+}
 .container3 .sec-2 a #learn-more-btn {
     border: 2px solid var(--blue-color);
     width: max-content;
@@ -365,9 +368,6 @@ line-height: 40px;
     padding: 8px 22px;
     border-radius: 30px;
     cursor: pointer;
-}
-.container3 .sec-2 a{
-    text-decoration: none;
 }
 .container3 .sec-2 a #learn-more-btn:hover{
     background-color: var(--blue-color);
@@ -419,7 +419,7 @@ line-height: 40px;
     .container3 .sec-1 .overlayImage p {
         font-size: 16px;
 }
-.container3 .sec-2 #learn-more-btn {
+.container3 .sec-2 a #learn-more-btn {
     padding: 6px 18px;
     margin-top: 12px !important
 }
@@ -1087,6 +1087,9 @@ padding: 1rem;}
     #about-para1, #about-para2 {
         color: var(--grey-text2);
         font-size: 14px;
+    }
+    #about-para2 {
+        margin-bottom: 12px !important;
     }
     #about-head {
         font-size: 21px;

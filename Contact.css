@@ -462,7 +462,8 @@ textarea {
             font-size: 14px;
         }
         .contact-container1 {
-            height: 13rem;
+            height: 15rem;
+            padding: 5rem 0 4rem 7rem;
         }
 }
 @media screen and (max-width: 840px) {
@@ -504,9 +505,6 @@ textarea {
     .contact-container3 .map-title .head {
         font-size: 28px;
 }
-.contact-container1 {
-    height: 11rem;
-}
 }
 @media screen and (max-width: 405px) {
     .input, textarea {
@@ -534,12 +532,6 @@ textarea {
 }
 .title1 .para2 {
     font-size: 12px;
-}
-.contact-container1 {
-    padding-left: 4rem;
-}
-.contact-container1 {
-    height: 10rem;
 }
 }
 

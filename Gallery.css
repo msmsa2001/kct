@@ -350,7 +350,7 @@ color: var(--blue-color);
         width: 94%;
     }
     .GalleryConatiner1 {
-        padding-left: 4rem;
+        padding: 5rem 0 4rem 7rem;
 }
 .title .para2 {
     font-size: 16px;
@@ -359,7 +359,7 @@ title .para1 {
     font-size: 46px;
 }
 .GalleryConatiner1 {
-    height: 13rem;
+    height: 15rem;
 }
 .pagination div {
     margin: 0px 8px;
@@ -434,9 +434,6 @@ title .para1 {
         .title .para2 {
             font-size: 15px;
         }
-        .GalleryConatiner1 {
-            height: 12rem;
-        }
         .GalleryConatiner2 {
             margin-top: 1rem;
             padding: 1rem 2rem;
@@ -493,22 +490,17 @@ title .para1 {
     .gallery2-para1 {
         font-size: 14px;
     }
-    .GalleryConatiner1 {
-        height: 11rem;
-    }.title .para1 {
+.title .para1 {
         font-size: 40px;
     }
     .title .para2 {
         font-size: 13px;
     }
-    .GalleryConatiner1 {
-        padding-left: 2rem;
-    }
     .GalleryConatiner2 p {
         margin-top: 10px;
     }
     .GalleryConatiner2 .sec-1 .gallery2-para2 {
-        font-size: 19px;
+        font-size:   19px;
     }
     .GalleryConatiner2 .sec-1 .gallery2-para3 {
         font-size: 14px;

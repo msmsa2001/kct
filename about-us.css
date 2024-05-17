@@ -372,7 +372,12 @@ background-color: transparent;
         text-align: center;
     }
 }
-
+@media screen and (max-width:560px) {
+    .section4 {
+        padding: 1.7rem 2.5rem;
+    }
+    
+}
 /*footer*/
 .footer {
     background-color: var(--background-color);
