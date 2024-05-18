@@ -26,10 +26,10 @@
    <!-- Nav bar Start -->
    <div class="navbar">
     <nav class="nav1">
-        <div class="logo">
+        <a class="logo" href="index.html">
             <img src="assest/image1.svg" alt="">
             <h1>Khidmat Charitable Trust</h1>
-        </div>
+        </a>
         <div class="sec">
             <ul>
                 <li><a href="index.html">HOME</a></li>
@@ -40,7 +40,7 @@
             </ul>
         </div>
         <div class="donate">
-            <button>DONATE NOW</button>
+            <button onclick="openPopup()">DONATE NOW</button>
         </div>
     </nav>
     <div class="nav2">
@@ -61,7 +61,7 @@
                 <li><a href="blog.html">BLOGS</a></li>
                 <li><a href="Gallery.html">GALLERY</a></li>
                 <li><a href="Contact.html">CONTACT US</a></li>
-                <li><button class="donateb">DONATE NOW</button></li>
+                <li><button class="donateb" onclick="openPopup()">DONATE NOW</button></li>
 
             </ul>
         </div>
@@ -233,6 +233,22 @@
 <div class="footer-pvt">
     <p>© 2020 Khidmat ALL RIGHTS RESERVED.</p>
 </div>
+<div id="popup" class="popup-container">
+    <div class="popup-box">
+        <span class="popup-close" onclick="closePopup()">&times;</span>
+        <img src="assest/scanner.jpg" alt="">
+    </div>
+</div>
+
+<script>
+    function openPopup() {
+        document.getElementById('popup').style.display = 'block';
+    }
+
+    function closePopup() {
+        document.getElementById('popup').style.display = 'none';
+    }
+</script>
 <!-- javascript code for navbar ends  -->
 <script>
     function sidebar() {

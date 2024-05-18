@@ -36,6 +36,10 @@ body {
     top: 0;
     z-index: 10;
 }
+.navbar nav a{
+    text-decoration: none;
+    color: #000;
+}
 .navbar nav {
     width: 100%;
     display: flex;
@@ -353,7 +357,7 @@ color: var(--blue-color);
         padding: 5rem 0 4rem 7rem;
 }
 .title .para2 {
-    font-size: 16px;
+    font-size: 18px;
 }
 title .para1 {
     font-size: 46px;
@@ -428,9 +432,6 @@ title .para1 {
         .cont11-row2 {
             gap: 12px;
         }
-        .title .para1 {
-            font-size: 46px;
-        }
         .title .para2 {
             font-size: 15px;
         }
@@ -489,12 +490,6 @@ title .para1 {
     }
     .gallery2-para1 {
         font-size: 14px;
-    }
-.title .para1 {
-        font-size: 40px;
-    }
-    .title .para2 {
-        font-size: 13px;
     }
     .GalleryConatiner2 p {
         margin-top: 10px;
@@ -680,4 +675,48 @@ title .para1 {
 .para2 a{
     color: var(--white);
     text-decoration: none;
+}
+.popup-container {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+}
+
+/* Styles for the popup box */
+.popup-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: fit-content;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+}
+.popup-box img{
+    width: auto;
+}
+/* Styles for the close button */
+.popup-close {
+    position: absolute;
+    top: 0px;
+    right: 12px;
+    cursor: pointer;
+    font-size: 30px;
+}
+@media screen and (max-width:600px) {
+    .popup-box img {
+        width: 330px;
+    }
+}
+@media screen and (max-width:450px) {
+    .popup-box img {
+        width: 280px;
+    }
 }
