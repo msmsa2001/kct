@@ -1,0 +1,625 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Event</title>
+
+    <link rel="apple-touch-icon" sizes="180x180" href="images/favicons/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicons/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicons/favicon-16x16.png" />
+
+
+    <link rel="manifest" href="images/favicons/site.webmanifest" />
+    <link rel="preconnect" href="https://fonts.googleapis.com/" />
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600;9..40,700;9..40,800&amp;display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500;600;700&amp;display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Castoro&amp;display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Schoolbell&amp;display=swap" rel="stylesheet" />
+
+
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+
+    <link rel="stylesheet" href="css/bootstrap-select.min.css" />
+
+    <link rel="stylesheet" href="css/animate.min.css" />
+
+    <link rel="stylesheet" href="css/fontawesome/css/all.min.css" />
+
+    <link rel="stylesheet" href="css/jquery-ui.css" />
+
+    <link rel="stylesheet" href="css/jquery.magnific-popup.css" />
+
+    <link rel="stylesheet" href="css/khidmat-icons/style.css" />
+
+    <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+
+    <link rel="stylesheet" href="css/khidmatmain.css" />
+</head>
+
+<body class="custom-cursor">
+
+    <div class="custom-cursor__cursor"></div>
+    <div class="custom-cursor__cursor-two"></div>
+
+
+    <div class="page-wrapper">
+
+        <!-- <div class="topbar-one">
+            <div class="container-fluid">
+                <div class="topbar-one__inner">
+                    <ul class="list-unstyled topbar-one__info">
+                        <li class="topbar-one__info__item">
+                            <span class="topbar-one__info__icon icon-paper-plane"></span>
+                            <a href="mailto:donation@khidmattrust.org">donation@khidmattrust.org</a>
+                        </li>
+                    </ul>
+                    <div class="topbar-one__right">
+                        <div class="social-link topbar-one__social">
+                            <a href="https://www.facebook.com/people/Khidmat-Charitable-Trust/100081203701961/?mibextid=ZbWKwL">
+                      <i class="fab fa-facebook-f" aria-hidden="true"></i>
+                      <span class="sr-only">Facebook</span>
+                    </a>
+                            <a href="https://www.instagram.com/khidmat_trust/?igsh=MXU0eHg3NXNva245cw%3D%3D">
+                      <i class="fab fa-instagram" aria-hidden="true"></i>
+                      <span class="sr-only">Instagram</span>
+                    </a>
+                            <a href="https://x.com/i/flow/login?redirect_after_login=%2Ftrust_khidmat">
+                      <i class="fab fa-twitter" aria-hidden="true"></i>
+                      <span class="sr-only">Twitter</span>
+                    </a>
+                            <a href="https://www.youtube.com/@khidmattrust" aria-hidden="true">
+                      <i class="fab fa-youtube"></i>
+                      <span class="sr-only">Youtube</span>
+                    </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+
+        <header class="main-header sticky-header sticky-header--normal">
+            <div class="container-fluid">
+                <div class="main-header__inner">
+                    <div class="main-header__logo">
+                        <a href="index.html">
+                    <img src="images/khidmat-logo.png" alt="khidmat logo" width="160" />
+                  </a>
+                        <button type="button" class="main-header__sidebar-btn sidebar-btn__toggler">
+                    <span class="icon-grid"></span>
+                  </button>
+                    </div>
+                    <div class="main-header__right">
+                        <nav class="main-header__nav main-menu">
+                            <ul class="main-menu__list">
+                                <li class="megamenu">
+                                    <a href="index.html">Home</a>
+                                </li>
+                                <li>
+                                    <a href="about.html">About Us</a>
+                                </li>
+                                <li class="">
+                                    <a href="activities.html">Activities</a>
+                                </li>
+                                <li class="">
+                                    <a href="benefits.html">Benefits</a>
+                                </li>
+                                <li class="">
+                                    <a href="careers.html">Careers</a>
+                                </li>
+                                <li class="">
+                                    <a href="contact.html">Contacts</a>
+                                </li>
+                            </ul>
+                        </nav>
+                        <div class="mobile-nav__btn mobile-nav__toggler">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                        <div class="main-header__cart">
+                            <a href="donate.html" class="cleenhearts-btn main-header__btn">
+                                <div class="cleenhearts-btn__icon-box">
+                                    <div class="cleenhearts-btn__icon-box__inner">
+                                        <span class="icon-donate"></span>
+                                    </div>
+                                </div>
+                                <span class="cleenhearts-btn__text">donate now</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <section class="page-header @@extraClassName">
+            <div class="page-header__bg" style=""></div>
+
+            <div class="container">
+                <h2 class="page-header__title">Events</h2>
+                <ul class="cleenhearts-breadcrumb list-unstyled">
+                    <li><i class="icon-home"></i> <a href="index.html">Home</a></li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="event-details section-space">
+            <div class="container">
+                <div class="row gutter-y-60">
+                    <div class="col-lg-8 mt-0">
+                        <div class="event-details__content">
+                            <div class="event-details__image wow fadeInUp" data-wow-duration="1500ms" data-wow-delay="00ms">
+                                <img src="images/events/event-3.jpg" alt="event-details">
+                                <div class="event-details__hall">
+                                    <span>2</span>
+                                    <span>Reactions</span>
+                                </div>
+                                <div class="event-details__date">
+                                    <span>17</span>
+                                    <span>July</span>
+                                </div>
+                            </div>
+                            <div class="event-details__time">
+                                <i class="event-details__time__icon fa fa-clock"></i>
+                                <span class="event-details__time__text">10:00 aM - 2.00 PM</span>
+                            </div>
+                            <h3 class="event-details__title mb-2">Why Should Anyone Approach Kct For Help And Assistance</h3>
+                            <div class="event-details__text mt-2">
+
+                                <ul class="event-details__inner__list">
+
+                                    <li>Medicines from the KCT are delivered to the patient’s doorstep the very same day.</li>
+                                    <li>It is ensured that the medicines strips are cut and the bottles are unsealed to avoid resale/misuse<br> of medicines.</li>
+                                    <li>KCT has tie up with various chemists who provide high discounts on these medicines.</li>
+                                    <li>Patients’ applications are carefully and promptly scrutinised by the trustees before a cheque is<br> issued, making sure that the treatment does not get unnecessarily delayed.</li>
+                                    <li>Around 150 to 180 patients receive KCT’s assistance, every day.</li>
+                                    <li>KCT is associated with several other trusts to arrange major expenses, say for a bypass surgery etc.</li>
+                                    <li>Where needed, KCT also provide pre-surgery support as well as financial assistance to buy shoes,<br> belt and surgical sutures.</li>
+                                    <li>All trustees regularly visit KCT office.</li>
+                                    <li>No references are sought and each patient is treated equally.</li>
+                                    <li>Refreshment and proper seating arrangement are provided to the patient and their relatives.</li>
+
+                                </ul>
+                            </div>
+                        </div>
+
+
+                        <div class="event-details__speaker mt-5">
+                            <h3 class="event-details__speaker__title event-details__title">Related Posts</h3>
+                            <div class="event-details__speaker__info wow fadeInUp" data-wow-duration="1500ms" data-wow-delay="00ms">
+                                <div class="event-details__speaker__image">
+                                    <img src="images/events/event-1.jpg" alt="">
+                                </div>
+                                <div class="event-details__speaker__content">
+                                    <div class="event-details__speaker__content__inner">
+                                        <div class="event-details__speaker__indentity">
+                                            <h4 class="event-details__speaker__name">
+                                                DIALYSIS CENTRE</h4>
+                                        </div>
+                                    </div>
+                                    <div class="event-details__speaker__text">
+                                        <p>During the course of running our Medical Aid program, KCT Trust members would come across numerous cases in need of urgent dialysis treatment. Since dialysis treatment is an on-going cost, for the underprivileged,...</p>
+                                        <a href="event-dialysis-centre.html"> <button class="btnrd cleenhearts-btn">Read More</button></a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="event-details__speaker__info wow fadeInUp" data-wow-duration="1500ms" data-wow-delay="00ms">
+                                <div class="event-details__speaker__image">
+                                    <img src="images/events/event-4.jpg" alt="">
+                                </div>
+                                <div class="event-details__speaker__content">
+                                    <div class="event-details__speaker__content__inner">
+                                        <div class="event-details__speaker__indentity">
+                                            <h4 class="event-details__speaker__name">
+                                                RAMZAN AND MONTHLY RATION AID
+                                            </h4>
+                                        </div>
+                                    </div>
+                                    <div class="event-details__speaker__text">
+                                        <p>
+                                            During the course of running our Medical Aid program, KCT Trust members would come across numerous cases in need of urgent dialysis treatment. Since dialysis treatment is an on-going cost, for the underprivileged,…
+                                        </p>
+                                        <a href="event-ramzan-and-monthly-ration-aid.html"><button class="btnrd cleenhearts-btn">Read More</button></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 mt-0">
+                        <aside class="sidebar-event">
+                            <div class="sidebar-event__contact contact-one sidebar-event__item wow fadeInUp" data-wow-duration="1500ms" data-wow-delay="00ms">
+                                <div class="contact-one__info">
+                                    <div class="contact-one__info__item">
+                                        <div class="contact-one__info__icon">
+                                            <span class="icon-location"></span>
+                                        </div>
+                                        <div class="contact-one__info__content">
+                                            <h4 class="contact-one__info__title">Mailing Address</h4>
+                                            <address class="contact-one__info__text">C/O Educational & Welfare Foundation, P.T Mane Udyan, Mirza Galib Marg, Opp. Rolex Restaurant, Clare Road, Nagpada Junction, Mumbai: 400 008</address>
+                                        </div>
+                                    </div>
+                                    <div class="contact-one__info__item">
+                                        <div class="contact-one__info__icon">
+                                            <span class="icon-phone"></span>
+                                        </div>
+                                        <div class="contact-one__info__content">
+                                            <h4 class="contact-one__info__title">Quick Contact</h4>
+                                            <a href="tel:91 22 23082291" class="contact-one__info__text contact-one__info__text--link">+91 22 23082291</a>
+                                        </div>
+                                    </div>
+                                    <div class="contact-one__info__item">
+                                        <div class="contact-one__info__icon">
+                                            <span class="icon-envelope"></span>
+                                        </div>
+                                        <div class="contact-one__info__content">
+                                            <h4 class="contact-one__info__title">support email</h4>
+                                            <a href="mailto:donation@khidmattrust.org" class="contact-one__info__text contact-one__info__text--link">donation@khidmattrust.org</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="sidebar-event__contact__image">
+                                    <img src="images/events/event-1.jpg" alt="events">
+                                </div>
+                            </div>
+                            <div class="sidebar-event__map sidebar-event__item wow fadeInUp" data-wow-duration="1500ms" data-wow-delay="100ms">
+                                <div class="google-map @@extraClassName">
+                                    <iframe title="template google map" src="https://maps.google.com/maps?t=m&amp;output=embed&amp;iwloc=near&amp;z=17&amp;q=68%2C+Mirza+Galib+Rd%2C+Police+Colony%2C+Ashadham+Colony%2C+Madanpura%2C+Mumbai%2C+india" class="map__@@extraClassName" allowfullscreen></iframe>
+                                </div>
+
+                            </div>
+
+                            <div class="reaction-section">
+                                <h2>What's your reaction?</h2>
+                                <div class="reaction-buttons">
+                                    <div class="reaction-box" onclick="increaseCount(this)">
+                                        <i class="reaction-icon">&#128077;</i>
+                                        <!-- Thumbs Up Icon -->
+                                        <span class="reaction-count">2</span>
+                                        <p>Cool</p>
+                                    </div>
+                                    <div class="reaction-box" onclick="increaseCount(this)">
+                                        <i class="reaction-icon">&#128078;</i>
+                                        <!-- Thumbs Down Icon -->
+                                        <span class="reaction-count">0</span>
+                                        <p>Upset</p>
+                                    </div>
+                                    <div class="reaction-box" onclick="increaseCount(this)">
+                                        <i class="reaction-icon">&#10084;</i>
+                                        <!-- Heart Icon -->
+                                        <span class="reaction-count">0</span>
+                                        <p>Love</p>
+                                    </div>
+                                    <div class="reaction-box" onclick="increaseCount(this)">
+                                        <i class="reaction-icon">&#128518;</i>
+                                        <!-- Laughing Face Icon -->
+                                        <span class="reaction-count">0</span>
+                                        <p>LOL</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </aside>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="subscribe">
+            <div class="subscribe__bg"></div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-5 wow fadeInUp" data-wow-delay="00ms" data-wow-duration="1500ms">
+                        <div class="subscribe__content">
+                            <span class="subscribe__title-image icon-email"></span>
+                            <h2 class="subscribe__title">Subscribe Now</h2>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-7 wow fadeInUp">
+                        <form action="#" data-url="MAILCHIMP_FORM_URL" class="subscribe__form mc-form" data-wow-delay="200ms" data-wow-duration="1500ms">
+                            <input type="email" name="EMAIL" id="subscribe" placeholder="enter your email" class="subscribe__form__input" />
+                            <button type="submit" class="subscribe__form__btn">
+                      <span class="subscribe__form__btn__text">Subscribe now</span>
+                      <span class="subscribe__form__btn__icon icon-paper-plane"></span>
+                    </button>
+                        </form>
+
+                        <div class="mc-form__response"></div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="subscribe__shape">
+                <div class="subscribe__shape__one"></div>
+
+                <div class="subscribe__shape__two"></div>
+
+            </div>
+
+        </section>
+
+
+        <footer class="main-footer background-white2">
+            <div class="main-footer__top">
+                <div class="container">
+                    <div class="row gutter-y-30">
+                        <div class="col-md-12 col-xl-3 wow fadeInUp" data-wow-duration="1500ms" data-wow-delay="00ms">
+                            <div class="footer-widget footer-widget--about">
+                                <a href="index.html" class="footer-widget__logo">
+                        <img src="images/khidmat-logo.png" width="140" alt="" />
+                      </a>
+                                <p class="footer-widget__about-text">
+                                    We are <strong>Khidmat Charitable Trust (KCT)</strong>, a Non-Government Organization registered under the Public Trust Registration Act of 1950 Government of India on 12 December 2001 having registration no E19852,
+                                    based in Mumbai.
+                                </p>
+                            </div>
+
+                            <a href="donate.html" class="footer-widget__map">
+                      <span class="footer-widget__map__text">Donate Now</span>
+                      <span class="icon-paper-plane"></span>
+                    </a>
+                        </div>
+
+                        <div class="col-xl-4 col-md-5 wow fadeInUp" data-wow-duration="1500ms" data-wow-delay="200ms">
+                            <div class="footer-widget footer-widget--contact">
+                                <h2 class="footer-widget__title">Get in touch!</h2>
+
+                                <ul class="list-unstyled footer-widget__info">
+                                    <li>
+                                        <span class="icon-location"></span>
+                                        <address>
+                            C/O Educational & Welfare Foundation, P.T Mane Udyan,
+                            Mirza Galib Marg, Opp. Rolex Restaurant, Clare Road,
+                            Nagpada Junction, Mumbai: 400 008
+                          </address>
+                                    </li>
+                                    <li>
+                                        <span class="icon-phone"></span><a href="tel:+91 22 23082291">+91 22 23082291</a>
+                                        <a style="margin-left: 10px" href="tel:918657970797">+91 86579 70797</a>
+                                    </li>
+                                    <li>
+                                        <span class="icon-envelope"></span><a href="mailto:donation@khidmattrust.org">donation@khidmattrust.org</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-2 wow fadeInUp" data-wow-duration="1500ms" data-wow-delay="400ms">
+                            <div class="footer-widget footer-widget--links">
+                                <h2 class="footer-widget__title">Quick Links</h2>
+                                <ul class="list-unstyled footer-widget__links">
+                                    <li><a href="#">About Us</a></li>
+                                    <li><a href="#">Activities</a></li>
+                                    <li><a href="#">Benefits</a></li>
+                                    <li><a href="#">Careers</a></li>
+                                    <li><a href="#">Contacts</a></li>
+                                </ul>
+                                <h2 class="footer-widget__title mb-2">Follow Us</h2>
+                                <div class="foot_socail">
+                                    <div class="social-link topbar-one__social">
+                                        <a href="https://www.facebook.com/people/Khidmat-Charitable-Trust/100081203701961/?mibextid=ZbWKwL">
+                            <i class="fab fa-facebook-f" aria-hidden="true"></i>
+                            <span class="sr-only">Facebook</span>
+                          </a>
+                                        <a href="https://www.instagram.com/khidmat_trust/?igsh=MXU0eHg3NXNva245cw%3D%3D">
+                            <i class="fab fa-instagram" aria-hidden="true"></i>
+                            <span class="sr-only">Instagram</span>
+                          </a>
+                                        <a href="https://x.com/i/flow/login?redirect_after_login=%2Ftrust_khidmat">
+                            <i class="fab fa-twitter" aria-hidden="true"></i>
+                            <span class="sr-only">Twitter</span>
+                          </a>
+                                        <a href="https://www.youtube.com/@khidmattrust" aria-hidden="true">
+                            <i class="fab fa-youtube"></i>
+                            <span class="sr-only">Youtube</span>
+                          </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-xl-3 wow fadeInUp" data-wow-duration="1500ms" data-wow-delay="600ms">
+                            <h2 class="footer-widget__title">Office Timings</h2>
+                            <ul class="list-unstyled footer-widget__links">
+                                <p>
+                                    Monday to Saturday<br /> 10:30 am to 7:00 pm<br /> Sunday Closed
+                                </p>
+                            </ul>
+                            <h2 class="footer-widget__title mb-2">Patients Schedule</h2>
+                            <p>
+                                Tuesday/ Wednesday/ Saturday <br /> 10:00 am to 1:30 pm
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="main-footer__top__shape-box">
+                    <img src="images/shapes/footer-shape-hand-1-1.png" alt="hand" class="main-footer__top__shape-one" />
+                    <img src="images/shapes/footer-shape-hand-1-2.png" alt="hand" class="main-footer__top__shape-two" />
+                </div>
+
+            </div>
+
+            <div class="main-footer__bottom">
+                <div class="main-footer__bottom__bg" style="
+                    background: url('images/backgrounds/footer-bottom-bg-1-2.png');
+                  "></div>
+
+                <div class="container">
+                    <div class="main-footer__bottom__inner">
+                        <p class="main-footer__copyright">
+                            <span></span> © 2025 PYZON ALL RIGHTS RESERVED.
+                        </p>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </footer>
+
+    </div>
+
+
+
+    <div class="mobile-nav__wrapper">
+        <div class="mobile-nav__overlay mobile-nav__toggler"></div>
+        <div class="mobile-nav__content">
+            <span class="mobile-nav__close mobile-nav__toggler"><i class="fa fa-times"></i></span>
+            <div class="logo-box">
+                <a href="index.html" aria-label="logo image"><img src="images/logo-light.png" width="155" alt="" /></a>
+            </div>
+            <div class="mobile-nav__container"></div>
+            <ul class="mobile-nav__contact list-unstyled">
+                <li>
+                    <i class="fa fa-envelope"></i>
+                    <a href="mailto:donation@khidmattrust.org">donation@khidmattrust.org</a> <br>
+                </li>
+                <li>
+                    <i class="fa fa-phone-alt"></i>
+                    <a href="tel:+91 22 23082291 ">+91 22 23082291 </a>
+                </li>
+            </ul>
+            <div class="mobile-nav__social">
+                <a href="https://facebook.com">
+                <i class="fab fa-facebook-f" aria-hidden="true"></i>
+                <span class="sr-only">Facebook</span>
+              </a>
+                <a href="https://twitter.com">
+                <i class="fab fa-twitter" aria-hidden="true"></i>
+                <span class="sr-only">Twitter</span>
+              </a>
+                <a href="https://linkedin.com" aria-hidden="true">
+                <i class="fab fa-linkedin-in"></i>
+                <span class="sr-only">Linkedin</span>
+              </a>
+                <a href="https://youtube.com" aria-hidden="true">
+                <i class="fab fa-youtube"></i>
+                <span class="sr-only">Youtube</span>
+              </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="search-popup @@extraClassName">
+        <div class="search-popup__overlay search-toggler"></div>
+        <div class="search-popup__content">
+            <form role="search" method="get" class="search-popup__form" action="#">
+                <input type="text" id="search" placeholder="Search Here..." />
+                <button type="submit" aria-label="search submit" class="khidmat-btn">
+                <span><i class="icon-search"></i></span>
+              </button>
+            </form>
+        </div>
+    </div>
+
+    <a href="#" data-target="html" class="scroll-to-target scroll-to-top">
+          <span class="scroll-to-top__text">back top</span>
+          <span class="scroll-to-top__wrapper"><span class="scroll-to-top__inner"></span></span>
+        </a>
+
+    <aside class="sidebar-one">
+        <div class="sidebar-one__overlay sidebar-btn__toggler"></div>
+        <div class="sidebar-one__content">
+            <span class="sidebar-one__close sidebar-btn__toggler"><i class="fa fa-times"></i></span>
+            <div class="sidebar-one__logo sidebar-one__item">
+                <a href="index.html" aria-label="logo image"><img src="images/khidmat-logo.png" width="155"
+                  alt="logo-dark" /></a>
+            </div>
+            <div class="sidebar-one__about sidebar-one__item">
+                <p class="sidebar-one__about__text">Khidmat Charitable Trust (KCT) is a Non-Government Organization (NGO) registered under the Government of India’s Public Trust Registration Act of 1950 on 12 December 2001.</p>
+            </div>
+            <div class="sidebar-one__information sidebar-one__item">
+                <h4 class="sidebar-one__title">Information</h4>
+                <ul class="sidebar-one__information__list">
+                    <li>
+                        <span class="sidebar-one__information__icon icon-location"></span>
+                        <address class="sidebar-one__information__address">
+                    <p class="sidebar-one__information__text">C/O Educational & Welfare Foundation, P.T Mane Udyan, Mirza
+                      Galib Marg, Opp. Rolex Restaurant, Clare Road, Nagpada Junction, Mumbai: 400 008
+                    </p>
+                  </address>
+                    </li>
+                    <li>
+                        <i class="sidebar-one__information__icon icon-envelope"></i>
+                        <p class="sidebar-one__information__text"><a href="mailto:donation@khidmattrust.org.com">donation@khidmattrust.org.com</a></p>
+                    </li>
+                    <li>
+                        <span class="sidebar-one__information__icon icon-phone"></span>
+                        <p class="sidebar-one__information__text"><a href="tel:91 22 23082291">91 22 23082291</a></p>
+                    </li>
+                </ul>
+            </div>
+            <div class="sidebar-one__socila social-link sidebar-one__item">
+                <a href="https://facebook.com">
+                <i class="fab fa-facebook-f" aria-hidden="true"></i>
+                <span class="sr-only">Facebook</span>
+              </a>
+                <a href="https://twitter.com">
+                <i class="fab fa-twitter" aria-hidden="true"></i>
+                <span class="sr-only">Twitter</span>
+              </a>
+                <a href="https://linkedin.com" aria-hidden="true">
+                <i class="fab fa-linkedin-in"></i>
+                <span class="sr-only">Linkedin</span>
+              </a>
+                <a href="https://youtube.com" aria-hidden="true">
+                <i class="fab fa-youtube"></i>
+                <span class="sr-only">Youtube</span>
+              </a>
+            </div>
+            <div class="sidebar-one__newsletter sidebar-one__item">
+                <label class="sidebar-one__title" for="sidebar-email">Newsletter Subscribe</label>
+                <form action="#" class="sidebar-one__newsletter__inner mc-form" data-url="MAILCHIMP_FORM_URL">
+                    <input type="email" name="sidebar-email" id="sidebar-email" class="sidebar-one__newsletter__input" placeholder="Email Address">
+                    <button type="submit" class="sidebar-one__newsletter__btn"><i class="fa fa-paper-plane"
+                    aria-hidden="true"></i></button>
+                </form>
+                <div class="mc-form__response"></div>
+            </div>
+        </div>
+    </aside>
+
+
+
+    <script src="js/jquery-3.7.0.min.js"></script>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+
+    <script src="js/bootstrap-select.min.js"></script>
+
+    <script src="js/jarallax.min.js"></script>
+
+    <script src="js/jquery-ui.js"></script>
+
+    <script src="js/jquery.ajaxchimp.min.js"></script>
+
+    <script src="js/jquery.magnific-popup.min.js"></script>
+
+    <script src="js/wNumb.min.js"></script>
+
+    <script src="js/swiper-bundle.min.js"></script>
+
+    <script src="js/wow.js"></script>
+
+    <script src="js/imagesloaded.min.js"></script>
+
+    <script src="js/cleenhearts.js"></script>
+
+    <script>
+        function increaseCount(element) {
+            let countElement = element.querySelector('.reaction-count');
+            let currentCount = parseInt(countElement.textContent);
+            countElement.textContent = currentCount + 1;
+        }
+    </script>
+
+</body>
+
+</html>
