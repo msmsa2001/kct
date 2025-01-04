@@ -514,42 +514,53 @@
                         HOW BENEFICIARIES RECEIVE OUR AID?
                     </h6>
                 </div>
-              
+
                 <div class="gradient-cards">
-                  <div class="card">
-                    <div class="container-card bg-green-box">
-                     
-                      <p class="card-title">STEP - 1</p>
-                      <p class="card-description">Applicants seeking medical aid must submit a written request, after which Khidmat Charitable Trust reviews it and conducts a meeting to assess their needs.</p>
+                    <div class="card" data-aos="fade-up" data-aos-anchor-placement="top-bottom"
+                        data-aos-duration="1500">
+                        <div class="container-card bg-green-box">
+
+                            <p class="card-title">STEP - 1</p>
+                            <p class="card-description">Applicants seeking medical aid must submit a written request,
+                                after which Khidmat Charitable Trust reviews it and conducts a meeting to assess their
+                                needs.</p>
+                        </div>
                     </div>
-                  </div>
-              
-                  <div class="card">
-                    <div class="container-card bg-white-box">
-                      
-                      <p class="card-title">STEP - 2</p>
-                      <p class="card-description">After verifying the case, applicants must complete a 'Khidmat Enrollment' form with a photo, ID proof (PAN/Aadhaar), and a doctor's prescription for medical aid.
-                      </p>
+
+                    <div class="card" data-aos="fade-up" data-aos-anchor-placement="top-bottom"
+                        data-aos-duration="2000">
+                        <div class="container-card bg-white-box">
+
+                            <p class="card-title">STEP - 2</p>
+                            <p class="card-description">After verifying the case, applicants must complete a 'Khidmat
+                                Enrollment' form with a photo, ID proof (PAN/Aadhaar), and a doctor's prescription for
+                                medical aid.
+                            </p>
+                        </div>
                     </div>
-                  </div>
-              
-                  <div class="card">
-                    <div class="container-card bg-yellow-box">
-                     
-                      <p class="card-title">STEP - 3</p>
-                      <p class="card-description">KCT's Medical Officer reviews the procedure, and a pharmacist screens the prescription while estimating the costs for medicines and procedures.</p>
+
+                    <div class="card" data-aos="fade-up" data-aos-anchor-placement="top-bottom"
+                        data-aos-duration="2500">
+                        <div class="container-card bg-yellow-box">
+
+                            <p class="card-title">STEP - 3</p>
+                            <p class="card-description">KCT's Medical Officer reviews the procedure, and a pharmacist
+                                screens the prescription while estimating the costs for medicines and procedures.</p>
+                        </div>
                     </div>
-                  </div>
-              
-                  <div class="card">
-                    <div class="container-card bg-blue-box">
-                      
-                      <p class="card-title">STEP - 4</p>
-                      <p class="card-description">The Trustees review all forms and give final approval for prompt action. Medicines are delivered with open seals to prevent reselling, and payments are made via cheque, not cash.                      </p>
+
+                    <div class="card" data-aos="fade-up" data-aos-anchor-placement="top-bottom"
+                        data-aos-duration="2900">
+                        <div class="container-card bg-blue-box">
+
+                            <p class="card-title">STEP - 4</p>
+                            <p class="card-description">The Trustees review all forms and give final approval for prompt
+                                action. Medicines are delivered with open seals to prevent reselling, and payments are
+                                made via cheque, not cash. </p>
+                        </div>
                     </div>
-                  </div>
                 </div>
-              </div>
+            </div>
         </section>
         <section class="testimonials-one section-space">
             <div class="testimonials-one__bg cleenhearts-jarallax" data-jarallax data-speed="0.3"
@@ -1435,11 +1446,11 @@
         </div>
     </div>
 
-    <a href="#" data-target="html" class="scroll-to-target scroll-to-top">
-        <span class="scroll-to-top__text">back top</span>
-        <span class="scroll-to-top__wrapper"><span class="scroll-to-top__inner"></span></span>
-    </a>
-
+    <div id="progressbar">
+        <span class="progressValue">
+            0%
+        </span>
+    </div>
     <aside class="sidebar-one">
         <div class="sidebar-one__overlay sidebar-btn__toggler"></div>
         <div class="sidebar-one__content">
@@ -1494,7 +1505,7 @@
                     <span class="sr-only">Youtube</span>
                 </a>
             </div>
-            <div class="sidebar-one__newsletter sidebar-one__item">
+            <!-- <div class="sidebar-one__newsletter sidebar-one__item">
                 <label class="sidebar-one__title" for="sidebar-email">Newsletter Subscribe</label>
                 <form action="#" class="sidebar-one__newsletter__inner mc-form" data-url="MAILCHIMP_FORM_URL">
                     <input type="email" name="sidebar-email" id="sidebar-email" class="sidebar-one__newsletter__input"
@@ -1503,18 +1514,18 @@
                             aria-hidden="true"></i></button>
                 </form>
                 <div class="mc-form__response"></div>
-            </div>
+            </div> -->
         </div>
     </aside>
 
     <script>
         let valueDisplays = document.querySelectorAll(".numbers1");
-        let interval = 4000;
+        let interval = 3000;
 
         valueDisplays.forEach((valueDisplay) => {
             let startValue = 0;
             let endValue = parseInt(valueDisplay.getAttribute("data-val"));
-            let increment = 100;
+            let increment = 200;
             let duration = Math.floor(interval / (endValue / increment));
 
             let counter = setInterval(() => {
@@ -1527,7 +1538,7 @@
 
     <script>
         let valueDisplays1 = document.querySelectorAll(".numbers");
-        let interval1 = 4000;
+        let interval1 = 3000;
 
         valueDisplays1.forEach((valueDisplay) => {
             let startValue = 0;
@@ -1541,6 +1552,34 @@
                     clearInterval(counter);
                 }
             }, duration);
+        });
+    </script>
+    <script>
+        let calScrollValue = () => {
+            let scrollProgress = document.getElementById('progressbar');
+            let pos = document.documentElement.scrollTop;
+            let calHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+            let scrollValue = Math.round((pos * 100) / calHeight);
+            let progressValue = document.querySelector('.progressValue');
+    
+            if (pos > 100) {
+                scrollProgress.style.display = 'grid';
+            } else {
+                scrollProgress.style.display = 'none';
+            }
+    
+            // Corrected string interpolation
+            progressValue.textContent = `${scrollValue}%`;
+            
+            // Fixing the background style
+            scrollProgress.style.background = `conic-gradient(#194eb9 ${scrollValue}%, #67ccff ${scrollValue}%)`;
+        }
+    
+        window.onscroll = calScrollValue;
+        window.onload = calScrollValue;
+    
+        document.getElementById('progress').addEventListener('click', () => {
+            // Do nothing on click, just update the percentage text
         });
     </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"

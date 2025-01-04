@@ -513,11 +513,11 @@
         </div>
     </div>
 
-    <a href="#" data-target="html" class="scroll-to-target scroll-to-top">
-          <span class="scroll-to-top__text">back top</span>
-          <span class="scroll-to-top__wrapper"><span class="scroll-to-top__inner"></span></span>
-        </a>
-
+    <div id="progressbar">
+        <span class="progressValue">
+            0%
+        </span>
+    </div>
     <aside class="sidebar-one">
         <div class="sidebar-one__overlay sidebar-btn__toggler"></div>
         <div class="sidebar-one__content">
@@ -580,7 +580,34 @@
         </div>
     </aside>
 
-
+    <script>
+        let calScrollValue = () => {
+            let scrollProgress = document.getElementById('progressbar');
+            let pos = document.documentElement.scrollTop;
+            let calHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+            let scrollValue = Math.round((pos * 100) / calHeight);
+            let progressValue = document.querySelector('.progressValue');
+    
+            if (pos > 100) {
+                scrollProgress.style.display = 'grid';
+            } else {
+                scrollProgress.style.display = 'none';
+            }
+    
+            // Corrected string interpolation
+            progressValue.textContent = `${scrollValue}%`;
+            
+            // Fixing the background style
+            scrollProgress.style.background = `conic-gradient(#194eb9 ${scrollValue}%, #67ccff ${scrollValue}%)`;
+        }
+    
+        window.onscroll = calScrollValue;
+        window.onload = calScrollValue;
+    
+        document.getElementById('progress').addEventListener('click', () => {
+            // Do nothing on click, just update the percentage text
+        });
+    </script>
 
     <script src="js/jquery-3.7.0.min.js"></script>
 

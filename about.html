@@ -18,6 +18,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500;600;700&amp;display=swap" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css2?family=Castoro&amp;display=swap" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css2?family=Schoolbell&amp;display=swap" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+
 
 
     <link rel="stylesheet" href="css/bootstrap.min.css" />
@@ -344,8 +346,10 @@
                 <div class="row">
                     <div class="help-people__images col-xl-6">
                         <div class="help-people__images__inner abthlpinner">
-                            <img src="images/about/aff-2.jpg" alt="help-people" class="wow fadeInLeft" data-wow-duration="1500ms" data-wow-delay="800ms" />
-                            <img src="images/about/aff-1.jpg" alt="help-people" class="wow fadeInLeft" data-wow-duration="1500ms" data-wow-delay="400ms" />
+                            <!-- <img src="images/about/aff-2.jpg" alt="help-people" class="wow fadeInLeft" data-wow-duration="1500ms" data-wow-delay="800ms" />
+                            <img src="images/about/aff-1.jpg" alt="help-people" class="wow fadeInLeft" data-wow-duration="1500ms" data-wow-delay="400ms" /> -->
+                             <img src="images/affiliate trustee.jpg" alt="" class="wow fadeInLeft" data-wow-duration="1500ms" data-wow-delay="800ms">
+                             <img src="images/affiliated trustee 2.jpg" alt=""  class="wow fadeInLeft" data-wow-duration="1500ms" data-wow-delay="400ms">
                         </div>
 
                     </div>
@@ -595,10 +599,11 @@
         </div>
     </div>
 
-    <a href="#" data-target="html" class="scroll-to-target scroll-to-top">
-    <span class="scroll-to-top__text">back top</span>
-    <span class="scroll-to-top__wrapper"><span class="scroll-to-top__inner"></span></span>
-  </a>
+    <div id="progressbar">
+        <span class="progressValue">
+            0%
+        </span>
+    </div>
 
     <aside class="sidebar-one">
         <div class="sidebar-one__overlay sidebar-btn__toggler"></div>
@@ -662,7 +667,34 @@
         </div>
     </aside>
 
-
+    <script>
+        let calScrollValue = () => {
+            let scrollProgress = document.getElementById('progressbar');
+            let pos = document.documentElement.scrollTop;
+            let calHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+            let scrollValue = Math.round((pos * 100) / calHeight);
+            let progressValue = document.querySelector('.progressValue');
+    
+            if (pos > 100) {
+                scrollProgress.style.display = 'grid';
+            } else {
+                scrollProgress.style.display = 'none';
+            }
+    
+            // Corrected string interpolation
+            progressValue.textContent = `${scrollValue}%`;
+            
+            // Fixing the background style
+            scrollProgress.style.background = `conic-gradient(#194eb9 ${scrollValue}%, #67ccff ${scrollValue}%)`;
+        }
+    
+        window.onscroll = calScrollValue;
+        window.onload = calScrollValue;
+    
+        document.getElementById('progress').addEventListener('click', () => {
+            // Do nothing on click, just update the percentage text
+        });
+    </script>
     <script src="js/jquery-3.7.0.min.js"></script>
 
     <script src="js/bootstrap.bundle.min.js"></script>
