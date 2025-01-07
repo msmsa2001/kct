@@ -9897,7 +9897,7 @@ body.megamenu-popup-active .mobile-nav__content {
         top: 21% !important;
     }
 }
-@media (max-width: 400px) {
+@media (max-width: 450px) {
     .beneficiaries {
         margin-top: -37rem;
     }
