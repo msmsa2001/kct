@@ -9897,6 +9897,20 @@ body.megamenu-popup-active .mobile-nav__content {
         top: 21% !important;
     }
 }
+@media (max-width: 400px) {
+    .beneficiaries {
+        margin-top: -37rem;
+    }
+    .main-slider-one__item{
+        padding-bottom: 240px;
+    }
+    .main-slider-one__carousel .owl-dots .owl-dot{
+        margin: 8px 0;
+    }
+    .main-slider-one__carousel .owl-dots{
+        top: 21% !important;
+    }
+}
 
 .main-slider-one__bg {
     position: absolute;
@@ -12106,7 +12120,7 @@ body.megamenu-popup-active .mobile-nav__content {
     }
 }
 .about-p{
-    font-size: 10px;
+    font-size: 12px;
 }
 /* .about-AVM{
     display: grid;
