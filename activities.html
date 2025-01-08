@@ -14,10 +14,14 @@
     <link rel="manifest" href="images/favicons/site.webmanifest" />
     <link rel="preconnect" href="https://fonts.googleapis.com/" />
     <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600;9..40,700;9..40,800&amp;display=swap" rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500;600;700&amp;display=swap" rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600;9..40,700;9..40,800&amp;display=swap"
+        rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500;600;700&amp;display=swap"
+        rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css2?family=Castoro&amp;display=swap" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css2?family=Schoolbell&amp;display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
 
 
     <link rel="stylesheet" href="css/bootstrap.min.css" />
@@ -48,6 +52,14 @@
     <link rel="stylesheet" href="css/owl.theme.default.min.css" />
 
     <link rel="stylesheet" href="css/khidmatmain.css" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+<!-- Owl Carousel CSS -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+
+<!-- Owl Carousel JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
 </head>
 
 <body class="custom-cursor">
@@ -92,482 +104,488 @@
     </div>
     </div> -->
 
-    <header class="main-header sticky-header sticky-header--normal">
-        <div class="container-fluid">
-            <div class="main-header__inner">
-                <div class="main-header__logo">
-                    <a href="index.html">
-                <img src="images/khidmat-logo.png" alt="khidmat logo" width="160" />
-              </a>
-                    <button type="button" class="main-header__sidebar-btn sidebar-btn__toggler">
-                <span class="icon-grid"></span>
-              </button>
-                </div>
-                <div class="main-header__right">
-                    <nav class="main-header__nav main-menu">
-                        <ul class="main-menu__list">
-                            <li class="megamenu">
-                                <a href="index.html">Home</a>
-                            </li>
-                            <li>
-                                <a href="about.html">About Us</a>
-                            </li>
-                            <li class="">
-                                <a href="activities.html">Activities</a>
-                            </li>
-                            <li class="">
-                                <a href="benefits.html">Benefits</a>
-                            </li>
-                            <li class="">
-                                <a href="careers.html">Careers</a>
-                            </li>
-                            <li class="">
-                                <a href="contact.html">Contacts</a>
-                            </li>
-                        </ul>
-                    </nav>
-                    <div class="mobile-nav__btn mobile-nav__toggler">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                    </div>
-                    <div class="main-header__cart">
-                        <a href="donate.html" class="cleenhearts-btn main-header__btn">
-                            <div class="cleenhearts-btn__icon-box">
-                                <div class="cleenhearts-btn__icon-box__inner">
-                                    <span class="icon-donate"></span>
-                                </div>
-                            </div>
-                            <span class="cleenhearts-btn__text">donate now</span>
+        <header class="main-header sticky-header sticky-header--normal">
+            <div class="container-fluid">
+                <div class="main-header__inner">
+                    <div class="main-header__logo">
+                        <a href="index.html">
+                            <img src="images/khidmat-logo.png" alt="khidmat logo" width="160" />
                         </a>
+                        <button type="button" class="main-header__sidebar-btn sidebar-btn__toggler">
+                            <span class="icon-grid"></span>
+                        </button>
+                    </div>
+                    <div class="main-header__right">
+                        <nav class="main-header__nav main-menu">
+                            <ul class="main-menu__list">
+                                <li class="megamenu">
+                                    <a href="index.html">Home</a>
+                                </li>
+                                <li>
+                                    <a href="about.html">About Us</a>
+                                </li>
+                                <li class="">
+                                    <a href="activities.html">Activities</a>
+                                </li>
+                                <li class="">
+                                    <a href="benefits.html">Benefits</a>
+                                </li>
+                                <li class="">
+                                    <a href="careers.html">Careers</a>
+                                </li>
+                                <li class="">
+                                    <a href="contact.html">Contacts</a>
+                                </li>
+                            </ul>
+                        </nav>
+                        <div class="mobile-nav__btn mobile-nav__toggler">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                        <div class="main-header__cart">
+                            <a href="donate.html" class="cleenhearts-btn main-header__btn">
+                                <div class="cleenhearts-btn__icon-box">
+                                    <div class="cleenhearts-btn__icon-box__inner">
+                                        <span class="icon-donate"></span>
+                                    </div>
+                                </div>
+                                <span class="cleenhearts-btn__text">donate now</span>
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </header>
+        </header>
 
-    <section class="page-header @@extraClassName">
-        <div class="page-header__bg" style="background-image: url('');"></div>
-        <!-- /.page-header__bg -->
-        <div class="container">
-            <h2 class="page-header__title">Activities</h2>
-            <ul class="cleenhearts-breadcrumb list-unstyled">
-                <li><i class="icon-home"></i> <a href="index.html">Home</a></li>
-                <li><span>Activities</span></li>
-            </ul>
-            <!-- /.thm-breadcrumb list-unstyled -->
-        </div>
-        <!-- /.container -->
-    </section>
-    <!-- /.page-header -->
+        <section class="page-header @@extraClassName">
+            <div class="page-header__bg" style="background-image: url('');"></div>
+            <!-- /.page-header__bg -->
+            <div class="container">
+                <h2 class="page-header__title">Activities</h2>
+                <ul class="cleenhearts-breadcrumb list-unstyled">
+                    <li><i class="icon-home"></i> <a href="index.html">Home</a></li>
+                    <li><span>Activities</span></li>
+                </ul>
+                <!-- /.thm-breadcrumb list-unstyled -->
+            </div>
+            <!-- /.container -->
+        </section>
+        <!-- /.page-header -->
 
 
-    <section class="about-one @@extraClassName section-space">
-        <div class="about-one__bg">
-            <div class="about-one__bg__border"></div>
-            <div class="about-one__bg__inner" style="
+        <section class="about-one @@extraClassName section-space">
+            <div class="about-one__bg">
+                <div class="about-one__bg__border"></div>
+                <div class="about-one__bg__inner" style="
                 background-image: url('images/shapes/about-shape-1-1.png');
               "></div>
-        </div>
-        <div class="container">
-            <div class="row gutter-y-50">
-                <div class="col-xl-6 wow fadeInLeft" data-wow-delay="00ms" data-wow-duration="1500ms">
-                    <div class="about-one__left">
-                        <div class="about-one__image">
-                            <img src="images/about/activities.jpg" alt="about" class="about-one__image__one" />
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-6">
-                    <div class="about-one__content">
-                        <div class="sec-title">
-                            <h6 class="sec-title__tagline @@extraClassName">Activities</h6>
-
-                            <h3 class="sec-title__title">
-                                WHO BENEFITS FROM KCT
-                                <span class="sec-title__title__inner">ACTIVITIES?</span>
-                            </h3>
-                        </div>
-                        <div class="about-one__text-box wow fadeInUp" data-wow-delay="00ms" data-wow-duration="1500ms">
-                            <p class="about-one__text">
-                                Since our inception, <b>Khidmat Charitable Trust </b>is committed to playing the role of a catalyst in the provision, care and uplift of people living below the poverty line. This includes, not just those in need of critical
-                                disease management but also migrant, daily wagers, widows, orphans and other vulnerable sections of our society, dealing with challenging life situations. Religion is not a barrier. KCT stands committed to bring respect
-                                and self-sufficiency to every deserving human being, who needs our support.
-                            </p>
-                        </div>
-                    </div>
-                </div>
             </div>
-            <!-- /.row -->
-        </div>
-        <!-- /.container -->
-
-        <img src="images/shapes/about-shape-1-2.png" alt="" class="about-one__hand" />
-    </section>
-    <!-- /.about-one section-space -->
-
-    <section class="gallery-one section-space">
-        <div class="container">
-
-            <h6 class="sec-title__tagline sec-title__tagline--center mb-5">
-                Gallery</h6>
-
-            <div class="gallery-one__carousel cleenhearts-owl__carousel cleenhearts-owl__carousel--basic-nav owl-carousel owl-theme" data-owl-options='{
-        "items": 1,
-        "margin": 0,
-        "loop": false,
-        "smartSpeed": 700,
-        "nav": false,
-        "navText": ["<span class=\"icon-arrow-left\"></span>","<span class=\"icon-arrow-right\"></span>"],
-        "dots": true,
-        "autoplay": false,
-        "responsive": {
-          "0": {
-            "items": 1,
-            "margin": 20
-          },
-          "768": {
-            "items": 2,
-            "margin": 30
-          },
-          "992": {
-            "items": 2,
-            "margin": 30
-          },
-          "1200": {
-            "items": 3,
-            "margin": 30
-          }
-        }
-      }'>
-                <div class="item">
-                    <div class="gallery-one__card">
-                        <img src="images/gallery/gallery-slide-1.jpg" alt="" />
-                        <div class="gallery-one__card__hover">
-                            <a href="images/gallery/gallery-slide-1.jpg" class="img-popup">
-                      <span class="gallery-one__card__icon"></span>
-                    </a>
+            <div class="container">
+                <div class="row gutter-y-50">
+                    <div class="col-xl-6 wow fadeInLeft" data-wow-delay="00ms" data-wow-duration="1500ms">
+                        <div class="about-one__left">
+                            <div class="about-one__image">
+                                <img src="images/about/activities.jpg" alt="about" class="about-one__image__one" />
+                            </div>
                         </div>
-                        <!-- /.gallery-one__card__hover -->
                     </div>
-                    <!-- /.gallery-one__card -->
-                </div>
-                <!-- /.item -->
-                <div class="item">
-                    <div class="gallery-one__card">
-                        <img src="images/gallery/gallery-slide-2.jpg" alt="" />
-                        <div class="gallery-one__card__hover">
-                            <a href="images/gallery/gallery-slide-2.jpg" class="img-popup">
-                      <span class="gallery-one__card__icon"></span>
-                    </a>
+                    <div class="col-xl-6">
+                        <div class="about-one__content">
+                            <div class="sec-title">
+                                <h6 class="sec-title__tagline @@extraClassName">Activities</h6>
+
+                                <h3 class="sec-title__title">
+                                    WHO BENEFITS FROM KCT
+                                    <span class="sec-title__title__inner">ACTIVITIES?</span>
+                                </h3>
+                            </div>
+                            <div class="about-one__text-box wow fadeInUp" data-wow-delay="00ms"
+                                data-wow-duration="1500ms">
+                                <p class="about-one__text">
+                                    Since our inception, <b>Khidmat Charitable Trust </b>is committed to playing the
+                                    role of a catalyst in the provision, care and uplift of people living below the
+                                    poverty line. This includes, not just those in need of critical
+                                    disease management but also migrant, daily wagers, widows, orphans and other
+                                    vulnerable sections of our society, dealing with challenging life situations.
+                                    Religion is not a barrier. KCT stands committed to bring respect
+                                    and self-sufficiency to every deserving human being, who needs our support.
+                                </p>
+                            </div>
                         </div>
-                        <!-- /.gallery-one__card__hover -->
                     </div>
-                    <!-- /.gallery-one__card -->
                 </div>
-                <!-- /.item -->
-                <div class="item">
-                    <div class="gallery-one__card">
-                        <img src="images/gallery/gallery-slide-3.jpg" alt="" />
-                        <div class="gallery-one__card__hover">
-                            <a href="images/gallery/gallery-slide-3.jpg" class="img-popup">
-                      <span class="gallery-one__card__icon"></span>
-                    </a>
-                        </div>
-                        <!-- /.gallery-one__card__hover -->
-                    </div>
-                    <!-- /.gallery-one__card -->
-                </div>
-                <!-- /.item -->
-                <div class="item">
-                    <div class="gallery-one__card">
-                        <img src="images/gallery/gallery-slide-4.jpg" alt="" />
-                        <div class="gallery-one__card__hover">
-                            <a href="images/gallery/gallery-slide-4.jpg" class="img-popup">
-                      <span class="gallery-one__card__icon"></span>
-                    </a>
-                        </div>
-                        <!-- /.gallery-one__card__hover -->
-                    </div>
-                    <!-- /.gallery-one__card -->
-                </div>
-                <!-- /.item -->
-                <div class="item">
-                    <div class="gallery-one__card">
-                        <img src="images/gallery/gallery-slide-5.jpg" alt="" />
-                        <div class="gallery-one__card__hover">
-                            <a href="images/gallery/gallery-slide-5.jpg" class="img-popup">
-                      <span class="gallery-one__card__icon"></span>
-                    </a>
-                        </div>
-                        <!-- /.gallery-one__card__hover -->
-                    </div>
-                    <!-- /.gallery-one__card -->
-                </div>
-
-
-                <!-- /.item -->
-                <div class="item">
-                    <div class="gallery-one__card">
-                        <img src="images/gallery/gallery-slide-6.jpg" alt="" />
-                        <div class="gallery-one__card__hover">
-                            <a href="images/gallery/gallery-slide-6.jpg" class="img-popup">
-                      <span class="gallery-one__card__icon"></span>
-                    </a>
-                        </div>
-                        <!-- /.gallery-one__card__hover -->
-                    </div>
-                    <!-- /.gallery-one__card -->
-                </div>
-
-
-                <!-- /.item -->
-                <div class="item">
-                    <div class="gallery-one__card">
-                        <img src="images/gallery/gallery-slide-7.jpg" alt="" />
-                        <div class="gallery-one__card__hover">
-                            <a href="images/gallery/gallery-slide-7.jpg" class="img-popup">
-                          <span class="gallery-one__card__icon"></span>
-                        </a>
-                        </div>
-                        <!-- /.gallery-one__card__hover -->
-                    </div>
-                    <!-- /.gallery-one__card -->
-                </div>
-
-
-
-                <!-- /.item -->
-                <div class="item">
-                    <div class="gallery-one__card">
-                        <img src="images/gallery/gallery-slide-8.jpg" alt="" />
-                        <div class="gallery-one__card__hover">
-                            <a href="images/gallery/gallery-slide-8.jpg" class="img-popup">
-                      <span class="gallery-one__card__icon"></span>
-                    </a>
-                        </div>
-                        <!-- /.gallery-one__card__hover -->
-                    </div>
-                    <!-- /.gallery-one__card -->
-                </div>
-
-
-                <!-- /.item -->
-                <div class="item">
-                    <div class="gallery-one__card">
-                        <img src="images/gallery/gallery-slide-9.jpg" alt="" />
-                        <div class="gallery-one__card__hover">
-                            <a href="images/gallery/gallery-slide-9.jpg" class="img-popup">
-                          <span class="gallery-one__card__icon"></span>
-                        </a>
-                        </div>
-                        <!-- /.gallery-one__card__hover -->
-                    </div>
-                    <!-- /.gallery-one__card -->
-                </div>
-
-
-                <!-- /.item -->
-                <div class="item">
-                    <div class="gallery-one__card">
-                        <img src="images/gallery/gallery-slide-10.jpg" alt="" />
-                        <div class="gallery-one__card__hover">
-                            <a href="images/gallery/gallery-slide-10.jpg" class="img-popup">
-                      <span class="gallery-one__card__icon"></span>
-                    </a>
-                        </div>
-                        <!-- /.gallery-one__card__hover -->
-                    </div>
-                    <!-- /.gallery-one__card -->
-                </div>
-
-
-                <!-- /.item -->
-                <div class="item">
-                    <div class="gallery-one__card">
-                        <img src="images/gallery/gallery-slide-11.jpg" alt="" />
-                        <div class="gallery-one__card__hover">
-                            <a href="images/gallery/gallery-slide-11.jpg" class="img-popup">
-                          <span class="gallery-one__card__icon"></span>
-                        </a>
-                        </div>
-                        <!-- /.gallery-one__card__hover -->
-                    </div>
-                    <!-- /.gallery-one__card -->
-                </div>
-
-
-                <!-- /.item -->
-                <div class="item">
-                    <div class="gallery-one__card">
-                        <img src="images/gallery/gallery-slide-12.jpg" alt="" />
-                        <div class="gallery-one__card__hover">
-                            <a href="images/gallery/gallery-slide-12.jpg" class="img-popup">
-                      <span class="gallery-one__card__icon"></span>
-                    </a>
-                        </div>
-                        <!-- /.gallery-one__card__hover -->
-                    </div>
-                    <!-- /.gallery-one__card -->
-                </div>
-
-
-                <!-- /.item -->
-                <div class="item">
-                    <div class="gallery-one__card">
-                        <img src="images/gallery/gallery-slide-13.jpg" alt="" />
-                        <div class="gallery-one__card__hover">
-                            <a href="images/gallery/gallery-slide-13.jpg" class="img-popup">
-                          <span class="gallery-one__card__icon"></span>
-                        </a>
-                        </div>
-                        <!-- /.gallery-one__card__hover -->
-                    </div>
-                    <!-- /.gallery-one__card -->
-                </div>
-
-                <!-- /.item -->
-                <div class="item">
-                    <div class="gallery-one__card">
-                        <img src="images/gallery/gallery-slide-14.jpg" alt="" />
-                        <div class="gallery-one__card__hover">
-                            <a href="images/gallery/gallery-slide-14.jpg" class="img-popup">
-                      <span class="gallery-one__card__icon"></span>
-                    </a>
-                        </div>
-                        <!-- /.gallery-one__card__hover -->
-                    </div>
-                    <!-- /.gallery-one__card -->
-                </div>
-
-
-                <!-- /.item -->
-                <div class="item">
-                    <div class="gallery-one__card">
-                        <img src="images/gallery/gallery-slide-15.jpg" alt="" />
-                        <div class="gallery-one__card__hover">
-                            <a href="images/gallery/gallery-slide-15.jpg" class="img-popup">
-                          <span class="gallery-one__card__icon"></span>
-                        </a>
-                        </div>
-                        <!-- /.gallery-one__card__hover -->
-                    </div>
-                    <!-- /.gallery-one__card -->
-                </div>
-
-
-                <!-- /.item -->
-                <div class="item">
-                    <div class="gallery-one__card">
-                        <img src="images/gallery/gallery-slide-16.jpg" alt="" />
-                        <div class="gallery-one__card__hover">
-                            <a href="images/gallery/gallery-slide-16.jpg" class="img-popup">
-                      <span class="gallery-one__card__icon"></span>
-                    </a>
-                        </div>
-                        <!-- /.gallery-one__card__hover -->
-                    </div>
-                    <!-- /.gallery-one__card -->
-                </div>
-
-
-                <!-- /.item -->
-                <div class="item">
-                    <div class="gallery-one__card">
-                        <img src="images/gallery/gallery-slide-17.jpg" alt="" />
-                        <div class="gallery-one__card__hover">
-                            <a href="images/gallery/gallery-slide-17.jpg" class="img-popup">
-                          <span class="gallery-one__card__icon"></span>
-                        </a>
-                        </div>
-                        <!-- /.gallery-one__card__hover -->
-                    </div>
-                    <!-- /.gallery-one__card -->
-                </div>
-
-
-                <!-- /.item -->
-                <div class="item">
-                    <div class="gallery-one__card">
-                        <img src="images/gallery/gallery-slide-18.jpg" alt="" />
-                        <div class="gallery-one__card__hover">
-                            <a href="images/gallery/gallery-slide-18.jpg" class="img-popup">
-                      <span class="gallery-one__card__icon"></span>
-                    </a>
-                        </div>
-                        <!-- /.gallery-one__card__hover -->
-                    </div>
-                    <!-- /.gallery-one__card -->
-                </div>
-
-
-                <!-- /.item -->
-                <div class="item">
-                    <div class="gallery-one__card">
-                        <img src="images/gallery/gallery-slide-18.jpg" alt="" />
-                        <div class="gallery-one__card__hover">
-                            <a href="images/gallery/gallery-slide-18.jpg" class="img-popup">
-                          <span class="gallery-one__card__icon"></span>
-                        </a>
-                        </div>
-                        <!-- /.gallery-one__card__hover -->
-                    </div>
-                    <!-- /.gallery-one__card -->
-                </div>
-
-                <!-- /.item -->
-                <div class="item">
-                    <div class="gallery-one__card">
-                        <img src="images/gallery/gallery-slide-19.jpg" alt="" />
-                        <div class="gallery-one__card__hover">
-                            <a href="images/gallery/gallery-slide-19.jpg" class="img-popup">
-                      <span class="gallery-one__card__icon"></span>
-                    </a>
-                        </div>
-                        <!-- /.gallery-one__card__hover -->
-                    </div>
-                    <!-- /.gallery-one__card -->
-                </div>
-
-
-                <!-- /.item -->
-                <div class="item">
-                    <div class="gallery-one__card">
-                        <img src="images/gallery/gallery-slide-20.jpg" alt="" />
-                        <div class="gallery-one__card__hover">
-                            <a href="images/gallery/gallery-slide-20.jpg" class="img-popup">
-                          <span class="gallery-one__card__icon"></span>
-                        </a>
-                        </div>
-                        <!-- /.gallery-one__card__hover -->
-                    </div>
-                    <!-- /.gallery-one__card -->
-                </div>
-
-
-                <!-- /.item -->
+                <!-- /.row -->
             </div>
-            <!-- /.gallery-one__carousel -->
-        </div>
-        <!-- /.container-fluid -->
-    </section>
-    <!-- /.gallery-one section-space -->
+            <!-- /.container -->
 
+            <img src="images/shapes/about-shape-1-2.png" alt="" class="about-one__hand" />
+        </section>
+        <!-- /.about-one section-space -->
 
-    <section class="subscribe">
-        <div class="subscribe__bg"></div>
-        <div class="container">
-            <div class="row1">
-                <div class="col-lg-5 wow fadeInUp" data-wow-delay="00ms" data-wow-duration="1500ms">
-                    <div class="subscribe__content">
-                        <h2 class="subscribe__title">"Khidmat Charitable Trust – A small step for us, <br> a big
-                            change for many. <br>
-                            Together, we make a difference."</h2>
-                        <!-- <span class="subscribe__title-image icon-email"></span> -->
-                        <!-- <h2 class="subscribe__title">Subscribe Now</h2> -->
+        <section class="gallery-one section-space swiper-container">
+            <div class="container">
+
+                <h6 class="sec-title__tagline sec-title__tagline--center mb-5">
+                    Gallery</h6>
+
+                <div class="gallery-one__carousel cleenhearts-owl__carousel cleenhearts-owl__carousel--basic-nav owl-carousel owl-theme swiper-wrapper"
+                    data-owl-options='{
+                          "items": 1,
+                          "margin": 0,
+                          "loop": false,
+                          "smartSpeed": 700,
+                          "nav": false,
+                          "navText": ["<span class=\"icon-arrow-left\"></span>","<span class=\"icon-arrow-right\"></span>"],
+                          "dots": true,
+                          "autoplay": false,
+                          "responsive": {
+                               "0": {
+                               "items": 1,
+                               "margin": 20
+                                    },
+                               "768": {
+                               "items": 2,
+                               "margin": 30
+                                },
+                                "992": {
+                                "items": 2,
+                                "margin": 30
+                                  },
+                                "1200": {
+                                "items": 3,
+                                 "margin": 30
+                                 }
+                                  }
+                                   }'>
+                    <div class="item swiper-wrapper">
+                        <div class="gallery-one__card swiper-slide">
+                            <img src="images/gallery/gallery-slide-1.jpg" alt="" />
+                            <div class="gallery-one__card__hover">
+                                <a href="images/gallery/gallery-slide-1.jpg" class="img-popup">
+                                    <span class="gallery-one__card__icon"></span>
+                                </a>
+                            </div>
+                            <!-- /.gallery-one__card__hover -->
+                        </div>
+                        <!-- /.gallery-one__card -->
                     </div>
+                    <!-- /.item -->
+                    <div class="item">
+                        <div class="gallery-one__card">
+                            <img src="images/gallery/gallery-slide-2.jpg" alt="" />
+                            <div class="gallery-one__card__hover">
+                                <a href="images/gallery/gallery-slide-2.jpg" class="img-popup">
+                                    <span class="gallery-one__card__icon"></span>
+                                </a>
+                            </div>
+                            <!-- /.gallery-one__card__hover -->
+                        </div>
+                        <!-- /.gallery-one__card -->
+                    </div>
+                    <!-- /.item -->
+                    <div class="item">
+                        <div class="gallery-one__card">
+                            <img src="images/gallery/gallery-slide-3.jpg" alt="" />
+                            <div class="gallery-one__card__hover">
+                                <a href="images/gallery/gallery-slide-3.jpg" class="img-popup">
+                                    <span class="gallery-one__card__icon"></span>
+                                </a>
+                            </div>
+                            <!-- /.gallery-one__card__hover -->
+                        </div>
+                        <!-- /.gallery-one__card -->
+                    </div>
+                    <!-- /.item -->
+                    <div class="item">
+                        <div class="gallery-one__card">
+                            <img src="images/gallery/gallery-slide-4.jpg" alt="" />
+                            <div class="gallery-one__card__hover">
+                                <a href="images/gallery/gallery-slide-4.jpg" class="img-popup">
+                                    <span class="gallery-one__card__icon"></span>
+                                </a>
+                            </div>
+                            <!-- /.gallery-one__card__hover -->
+                        </div>
+                        <!-- /.gallery-one__card -->
+                    </div>
+                    <!-- /.item -->
+                    <div class="item">
+                        <div class="gallery-one__card">
+                            <img src="images/gallery/gallery-slide-5.jpg" alt="" />
+                            <div class="gallery-one__card__hover">
+                                <a href="images/gallery/gallery-slide-5.jpg" class="img-popup">
+                                    <span class="gallery-one__card__icon"></span>
+                                </a>
+                            </div>
+                            <!-- /.gallery-one__card__hover -->
+                        </div>
+                        <!-- /.gallery-one__card -->
+                    </div>
+
+
+                    <!-- /.item -->
+                    <div class="item">
+                        <div class="gallery-one__card">
+                            <img src="images/gallery/gallery-slide-6.jpg" alt="" />
+                            <div class="gallery-one__card__hover">
+                                <a href="images/gallery/gallery-slide-6.jpg" class="img-popup">
+                                    <span class="gallery-one__card__icon"></span>
+                                </a>
+                            </div>
+                            <!-- /.gallery-one__card__hover -->
+                        </div>
+                        <!-- /.gallery-one__card -->
+                    </div>
+
+
+                    <!-- /.item -->
+                    <div class="item">
+                        <div class="gallery-one__card">
+                            <img src="images/gallery/gallery-slide-7.jpg" alt="" />
+                            <div class="gallery-one__card__hover">
+                                <a href="images/gallery/gallery-slide-7.jpg" class="img-popup">
+                                    <span class="gallery-one__card__icon"></span>
+                                </a>
+                            </div>
+                            <!-- /.gallery-one__card__hover -->
+                        </div>
+                        <!-- /.gallery-one__card -->
+                    </div>
+
+
+
+                    <!-- /.item -->
+                    <div class="item">
+                        <div class="gallery-one__card">
+                            <img src="images/gallery/gallery-slide-8.jpg" alt="" />
+                            <div class="gallery-one__card__hover">
+                                <a href="images/gallery/gallery-slide-8.jpg" class="img-popup">
+                                    <span class="gallery-one__card__icon"></span>
+                                </a>
+                            </div>
+                            <!-- /.gallery-one__card__hover -->
+                        </div>
+                        <!-- /.gallery-one__card -->
+                    </div>
+
+
+                    <!-- /.item -->
+                    <div class="item">
+                        <div class="gallery-one__card">
+                            <img src="images/gallery/gallery-slide-9.jpg" alt="" />
+                            <div class="gallery-one__card__hover">
+                                <a href="images/gallery/gallery-slide-9.jpg" class="img-popup">
+                                    <span class="gallery-one__card__icon"></span>
+                                </a>
+                            </div>
+                            <!-- /.gallery-one__card__hover -->
+                        </div>
+                        <!-- /.gallery-one__card -->
+                    </div>
+
+
+                    <!-- /.item -->
+                    <div class="item">
+                        <div class="gallery-one__card">
+                            <img src="images/gallery/gallery-slide-10.jpg" alt="" />
+                            <div class="gallery-one__card__hover">
+                                <a href="images/gallery/gallery-slide-10.jpg" class="img-popup">
+                                    <span class="gallery-one__card__icon"></span>
+                                </a>
+                            </div>
+                            <!-- /.gallery-one__card__hover -->
+                        </div>
+                        <!-- /.gallery-one__card -->
+                    </div>
+
+
+                    <!-- /.item -->
+                    <div class="item">
+                        <div class="gallery-one__card">
+                            <img src="images/gallery/gallery-slide-11.jpg" alt="" />
+                            <div class="gallery-one__card__hover">
+                                <a href="images/gallery/gallery-slide-11.jpg" class="img-popup">
+                                    <span class="gallery-one__card__icon"></span>
+                                </a>
+                            </div>
+                            <!-- /.gallery-one__card__hover -->
+                        </div>
+                        <!-- /.gallery-one__card -->
+                    </div>
+
+
+                    <!-- /.item -->
+                    <div class="item">
+                        <div class="gallery-one__card">
+                            <img src="images/gallery/gallery-slide-12.jpg" alt="" />
+                            <div class="gallery-one__card__hover">
+                                <a href="images/gallery/gallery-slide-12.jpg" class="img-popup">
+                                    <span class="gallery-one__card__icon"></span>
+                                </a>
+                            </div>
+                            <!-- /.gallery-one__card__hover -->
+                        </div>
+                        <!-- /.gallery-one__card -->
+                    </div>
+
+
+                    <!-- /.item -->
+                    <div class="item">
+                        <div class="gallery-one__card">
+                            <img src="images/gallery/gallery-slide-13.jpg" alt="" />
+                            <div class="gallery-one__card__hover">
+                                <a href="images/gallery/gallery-slide-13.jpg" class="img-popup">
+                                    <span class="gallery-one__card__icon"></span>
+                                </a>
+                            </div>
+                            <!-- /.gallery-one__card__hover -->
+                        </div>
+                        <!-- /.gallery-one__card -->
+                    </div>
+
+                    <!-- /.item -->
+                    <div class="item">
+                        <div class="gallery-one__card">
+                            <img src="images/gallery/gallery-slide-14.jpg" alt="" />
+                            <div class="gallery-one__card__hover">
+                                <a href="images/gallery/gallery-slide-14.jpg" class="img-popup">
+                                    <span class="gallery-one__card__icon"></span>
+                                </a>
+                            </div>
+                            <!-- /.gallery-one__card__hover -->
+                        </div>
+                        <!-- /.gallery-one__card -->
+                    </div>
+
+
+                    <!-- /.item -->
+                    <div class="item">
+                        <div class="gallery-one__card">
+                            <img src="images/gallery/gallery-slide-15.jpg" alt="" />
+                            <div class="gallery-one__card__hover">
+                                <a href="images/gallery/gallery-slide-15.jpg" class="img-popup">
+                                    <span class="gallery-one__card__icon"></span>
+                                </a>
+                            </div>
+                            <!-- /.gallery-one__card__hover -->
+                        </div>
+                        <!-- /.gallery-one__card -->
+                    </div>
+
+
+                    <!-- /.item -->
+                    <div class="item">
+                        <div class="gallery-one__card">
+                            <img src="images/gallery/gallery-slide-16.jpg" alt="" />
+                            <div class="gallery-one__card__hover">
+                                <a href="images/gallery/gallery-slide-16.jpg" class="img-popup">
+                                    <span class="gallery-one__card__icon"></span>
+                                </a>
+                            </div>
+                            <!-- /.gallery-one__card__hover -->
+                        </div>
+                        <!-- /.gallery-one__card -->
+                    </div>
+
+
+                    <!-- /.item -->
+                    <div class="item">
+                        <div class="gallery-one__card">
+                            <img src="images/gallery/gallery-slide-17.jpg" alt="" />
+                            <div class="gallery-one__card__hover">
+                                <a href="images/gallery/gallery-slide-17.jpg" class="img-popup">
+                                    <span class="gallery-one__card__icon"></span>
+                                </a>
+                            </div>
+                            <!-- /.gallery-one__card__hover -->
+                        </div>
+                        <!-- /.gallery-one__card -->
+                    </div>
+
+
+                    <!-- /.item -->
+                    <div class="item">
+                        <div class="gallery-one__card">
+                            <img src="images/gallery/gallery-slide-18.jpg" alt="" />
+                            <div class="gallery-one__card__hover">
+                                <a href="images/gallery/gallery-slide-18.jpg" class="img-popup">
+                                    <span class="gallery-one__card__icon"></span>
+                                </a>
+                            </div>
+                            <!-- /.gallery-one__card__hover -->
+                        </div>
+                        <!-- /.gallery-one__card -->
+                    </div>
+
+
+                    <!-- /.item -->
+                    <div class="item">
+                        <div class="gallery-one__card">
+                            <img src="images/gallery/gallery-slide-18.jpg" alt="" />
+                            <div class="gallery-one__card__hover">
+                                <a href="images/gallery/gallery-slide-18.jpg" class="img-popup">
+                                    <span class="gallery-one__card__icon"></span>
+                                </a>
+                            </div>
+                            <!-- /.gallery-one__card__hover -->
+                        </div>
+                        <!-- /.gallery-one__card -->
+                    </div>
+
+                    <!-- /.item -->
+                    <div class="item">
+                        <div class="gallery-one__card">
+                            <img src="images/gallery/gallery-slide-19.jpg" alt="" />
+                            <div class="gallery-one__card__hover">
+                                <a href="images/gallery/gallery-slide-19.jpg" class="img-popup">
+                                    <span class="gallery-one__card__icon"></span>
+                                </a>
+                            </div>
+                            <!-- /.gallery-one__card__hover -->
+                        </div>
+                        <!-- /.gallery-one__card -->
+                    </div>
+
+
+                    <!-- /.item -->
+                    <div class="item">
+                        <div class="gallery-one__card">
+                            <img src="images/gallery/gallery-slide-20.jpg" alt="" />
+                            <div class="gallery-one__card__hover">
+                                <a href="images/gallery/gallery-slide-20.jpg" class="img-popup">
+                                    <span class="gallery-one__card__icon"></span>
+                                </a>
+                            </div>
+                            <!-- /.gallery-one__card__hover -->
+                        </div>
+                        <!-- /.gallery-one__card -->
+                    </div>
+
+
+                    <!-- /.item -->
                 </div>
-                <!-- <div class="col-lg-7 wow fadeInUp">
+                <!-- /.gallery-one__carousel -->
+            </div>
+            <!-- /.container-fluid -->
+        </section>
+        <!-- /.gallery-one section-space -->
+
+
+        <section class="subscribe">
+            <div class="subscribe__bg"></div>
+            <div class="container">
+                <div class="row1">
+                    <div class="col-lg-5 wow fadeInUp" data-wow-delay="00ms" data-wow-duration="1500ms">
+                        <div class="subscribe__content">
+                            <h2 class="subscribe__title">"Khidmat Charitable Trust – A small step for us, <br> a big
+                                change for many. <br>
+                                Together, we make a difference."</h2>
+                            <!-- <span class="subscribe__title-image icon-email"></span> -->
+                            <!-- <h2 class="subscribe__title">Subscribe Now</h2> -->
+                        </div>
+                    </div>
+                    <!-- <div class="col-lg-7 wow fadeInUp">
                     <form action="#" data-url="MAILCHIMP_FORM_URL" class="subscribe__form mc-form" data-wow-delay="200ms" data-wow-duration="1500ms">
                         <input type="email" name="EMAIL" id="subscribe" placeholder="enter your email" class="subscribe__form__input" />
                         <button type="submit" class="subscribe__form__btn">
@@ -577,125 +595,130 @@
                     </form>
                     <div class="mc-form__response"></div>
                 </div> -->
+                </div>
             </div>
-        </div>
-        <div class="subscribe__shape">
-            <div class="subscribe__shape__one"></div>
-            <!-- <div class="subscribe__shape__two"></div> -->
-        </div>
-    </section>
+            <div class="subscribe__shape">
+                <div class="subscribe__shape__one"></div>
+                <!-- <div class="subscribe__shape__two"></div> -->
+            </div>
+        </section>
 
-    <footer class="main-footer background-white2">
-        <div class="main-footer__top">
-            <div class="container">
-                <div class="row gutter-y-30">
-                    <div class="col-md-12 col-xl-3 wow fadeInUp" data-wow-duration="1500ms" data-wow-delay="00ms">
-                        <div class="footer-widget footer-widget--about">
-                            <a href="index.html" class="footer-widget__logo">
-                    <img src="images/khidmat-logo.png" width="140" alt="" />
-                  </a>
-                            <p class="footer-widget__about-text">
-                                We are <strong>Khidmat Charitable Trust (KCT)</strong>, a Non-Government Organization registered under the Public Trust Registration Act of 1950 Government of India on 12 December 2001 having registration no E19852, based
-                                in Mumbai.
-                            </p>
+        <footer class="main-footer background-white2">
+            <div class="main-footer__top">
+                <div class="container">
+                    <div class="row gutter-y-30">
+                        <div class="col-md-12 col-xl-3 wow fadeInUp" data-wow-duration="1500ms" data-wow-delay="00ms">
+                            <div class="footer-widget footer-widget--about">
+                                <a href="index.html" class="footer-widget__logo">
+                                    <img src="images/khidmat-logo.png" width="140" alt="" />
+                                </a>
+                                <p class="footer-widget__about-text">
+                                    We are <strong>Khidmat Charitable Trust (KCT)</strong>, a Non-Government
+                                    Organization registered under the Public Trust Registration Act of 1950 Government
+                                    of India on 12 December 2001 having registration no E19852, based
+                                    in Mumbai.
+                                </p>
+                            </div>
+                            <a href="donate.html" class="footer-widget__map">
+                                <span class="footer-widget__map__text">Donate Now</span>
+                                <span class="icon-paper-plane"></span>
+                            </a>
                         </div>
-                        <a href="donate.html" class="footer-widget__map">
-                  <span class="footer-widget__map__text">Donate Now</span>
-                  <span class="icon-paper-plane"></span>
-                </a>
-                    </div>
-                    <div class="col-xl-4 col-md-5 wow fadeInUp" data-wow-duration="1500ms" data-wow-delay="200ms">
-                        <div class="footer-widget footer-widget--contact">
-                            <h2 class="footer-widget__title">Get in touch!</h2>
-                            <ul class="list-unstyled footer-widget__info">
-                                <li>
-                                    <span class="icon-location"></span>
-                                    <address>
-                        C/O Educational & Welfare Foundation, P.T Mane Udyan,
-                        Mirza Galib Marg, Opp. Rolex Restaurant, Clare Road,
-                        Nagpada Junction, Mumbai: 400 008
-                      </address>
-                                </li>
-                                <li>
-                                    <span class="icon-phone"></span>
-                                    <!-- <a href="tel:+91 22 23082291">+91 22 23082291</a> -->
-                                    <a style="margin-left: 10px" href="tel:918657970797">+91 86579 70797</a>
-                                </li>
-                                <li>
-                                    <span class="icon-envelope"></span>
-                                    <div class="email">
-                                        <a href="mailto:donation@khidmattrust.org">donation@khidmattrust.org</a> 
+                        <div class="col-xl-4 col-md-5 wow fadeInUp" data-wow-duration="1500ms" data-wow-delay="200ms">
+                            <div class="footer-widget footer-widget--contact">
+                                <h2 class="footer-widget__title">Get in touch!</h2>
+                                <ul class="list-unstyled footer-widget__info">
+                                    <li>
+                                        <span class="icon-location"></span>
+                                        <address>
+                                            C/O Educational & Welfare Foundation, P.T Mane Udyan,
+                                            Mirza Galib Marg, Opp. Rolex Restaurant, Clare Road,
+                                            Nagpada Junction, Mumbai: 400 008
+                                        </address>
+                                    </li>
+                                    <li>
+                                        <span class="icon-phone"></span>
+                                        <!-- <a href="tel:+91 22 23082291">+91 22 23082291</a> -->
+                                        <a style="margin-left: 10px" href="tel:918657970797">+91 86579 70797</a>
+                                    </li>
+                                    <li>
+                                        <span class="icon-envelope"></span>
+                                        <div class="email">
+                                            <a href="mailto:donation@khidmattrust.org">donation@khidmattrust.org</a>
                                             <a href="mailto:info@khidmattrust.org">info@khidmattrust.org</a>
                                         </div>
 
-                                </li>
-                            </ul>
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
-                    </div>
-                    <div class="col-md-2 wow fadeInUp" data-wow-duration="1500ms" data-wow-delay="400ms">
-                        <div class="footer-widget footer-widget--links">
-                            <h2 class="footer-widget__title">Quick Links</h2>
-                            <ul class="list-unstyled footer-widget__links">
-                                <li><a href="#">About Us</a></li>
-                                <li><a href="#">Activities</a></li>
-                                <li><a href="#">Benefits</a></li>
-                                <li><a href="#">Careers</a></li>
-                                <li><a href="#">Contacts</a></li>
-                            </ul>
-                            <h2 class="footer-widget__title mb-2">Follow Us</h2>
-                            <div class="foot_socail">
-                                <div class="social-link topbar-one__social">
-                                    <a href="https://www.facebook.com/people/Khidmat-Charitable-Trust/100081203701961/?mibextid=ZbWKwL">
-                        <i class="fab fa-facebook-f" aria-hidden="true"></i>
-                        <span class="sr-only">Facebook</span>
-                      </a>
-                                    <a href="https://www.instagram.com/khidmat_trust/?igsh=MXU0eHg3NXNva245cw%3D%3D">
-                        <i class="fab fa-instagram" aria-hidden="true"></i>
-                        <span class="sr-only">Instagram</span>
-                      </a>
-                                    <a href="https://x.com/i/flow/login?redirect_after_login=%2Ftrust_khidmat">
-                        <i class="fab fa-twitter" aria-hidden="true"></i>
-                        <span class="sr-only">Twitter</span>
-                      </a>
-                                    <a href="https://www.youtube.com/@khidmattrust" aria-hidden="true">
-                        <i class="fab fa-youtube"></i>
-                        <span class="sr-only">Youtube</span>
-                      </a>
+                        <div class="col-md-2 wow fadeInUp" data-wow-duration="1500ms" data-wow-delay="400ms">
+                            <div class="footer-widget footer-widget--links">
+                                <h2 class="footer-widget__title">Quick Links</h2>
+                                <ul class="list-unstyled footer-widget__links">
+                                    <li><a href="#">About Us</a></li>
+                                    <li><a href="#">Activities</a></li>
+                                    <li><a href="#">Benefits</a></li>
+                                    <li><a href="#">Careers</a></li>
+                                    <li><a href="#">Contacts</a></li>
+                                </ul>
+                                <h2 class="footer-widget__title mb-2">Follow Us</h2>
+                                <div class="foot_socail">
+                                    <div class="social-link topbar-one__social">
+                                        <a
+                                            href="https://www.facebook.com/people/Khidmat-Charitable-Trust/100081203701961/?mibextid=ZbWKwL">
+                                            <i class="fab fa-facebook-f" aria-hidden="true"></i>
+                                            <span class="sr-only">Facebook</span>
+                                        </a>
+                                        <a
+                                            href="https://www.instagram.com/khidmat_trust/?igsh=MXU0eHg3NXNva245cw%3D%3D">
+                                            <i class="fab fa-instagram" aria-hidden="true"></i>
+                                            <span class="sr-only">Instagram</span>
+                                        </a>
+                                        <a href="https://x.com/i/flow/login?redirect_after_login=%2Ftrust_khidmat">
+                                            <i class="fab fa-twitter" aria-hidden="true"></i>
+                                            <span class="sr-only">Twitter</span>
+                                        </a>
+                                        <a href="https://www.youtube.com/@khidmattrust" aria-hidden="true">
+                                            <i class="fab fa-youtube"></i>
+                                            <span class="sr-only">Youtube</span>
+                                        </a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-md-4 col-xl-3 wow fadeInUp" data-wow-duration="1500ms" data-wow-delay="600ms">
-                        <h2 class="footer-widget__title">Office Timings</h2>
-                        <ul class="list-unstyled footer-widget__links">
+                        <div class="col-md-4 col-xl-3 wow fadeInUp" data-wow-duration="1500ms" data-wow-delay="600ms">
+                            <h2 class="footer-widget__title">Office Timings</h2>
+                            <ul class="list-unstyled footer-widget__links">
+                                <p>
+                                    Monday to Saturday<br /> 10:30 am to 7:00 pm<br /> Sunday Closed
+                                </p>
+                            </ul>
+                            <h2 class="footer-widget__title mb-2">Patients Schedule</h2>
                             <p>
-                                Monday to Saturday<br /> 10:30 am to 7:00 pm<br /> Sunday Closed
+                                Tuesday/ Wednesday/ Saturday <br /> 10:00 am to 1:30 pm
                             </p>
-                        </ul>
-                        <h2 class="footer-widget__title mb-2">Patients Schedule</h2>
-                        <p>
-                            Tuesday/ Wednesday/ Saturday <br /> 10:00 am to 1:30 pm
+                        </div>
+                    </div>
+                </div>
+                <div class="main-footer__top__shape-box">
+                    <img src="images/shapes/footer-shape-hand-1-1.png" alt="hand" class="main-footer__top__shape-one" />
+                    <img src="images/shapes/footer-shape-hand-1-2.png" alt="hand" class="main-footer__top__shape-two" />
+                </div>
+            </div>
+            <div class="main-footer__bottom">
+                <div class="main-footer__bottom__bg" style="
+              background: url('images/backgrounds/footer-bottom-bg-1-2.png');
+            "></div>
+                <div class="container">
+                    <div class="main-footer__bottom__inner">
+                        <p class="main-footer__copyright">
+                            <span></span> © 2025 PYZON ALL RIGHTS RESERVED.
                         </p>
                     </div>
                 </div>
             </div>
-            <div class="main-footer__top__shape-box">
-                <img src="images/shapes/footer-shape-hand-1-1.png" alt="hand" class="main-footer__top__shape-one" />
-                <img src="images/shapes/footer-shape-hand-1-2.png" alt="hand" class="main-footer__top__shape-two" />
-            </div>
-        </div>
-        <div class="main-footer__bottom">
-            <div class="main-footer__bottom__bg" style="
-              background: url('images/backgrounds/footer-bottom-bg-1-2.png');
-            "></div>
-            <div class="container">
-                <div class="main-footer__bottom__inner">
-                    <p class="main-footer__copyright">
-                        <span></span> © 2025 PYZON ALL RIGHTS RESERVED.                    </p>
-                </div>
-            </div>
-        </div>
-    </footer>
+        </footer>
 
     </div>
     <!-- /.page-wrapper -->
@@ -721,21 +744,21 @@
             </ul>
             <div class="mobile-nav__social">
                 <a href="https://facebook.com">
-            <i class="fab fa-facebook-f" aria-hidden="true"></i>
-            <span class="sr-only">Facebook</span>
-          </a>
+                    <i class="fab fa-facebook-f" aria-hidden="true"></i>
+                    <span class="sr-only">Facebook</span>
+                </a>
                 <a href="https://twitter.com">
-            <i class="fab fa-twitter" aria-hidden="true"></i>
-            <span class="sr-only">Twitter</span>
-          </a>
+                    <i class="fab fa-twitter" aria-hidden="true"></i>
+                    <span class="sr-only">Twitter</span>
+                </a>
                 <a href="https://linkedin.com" aria-hidden="true">
-            <i class="fab fa-linkedin-in"></i>
-            <span class="sr-only">Linkedin</span>
-          </a>
+                    <i class="fab fa-linkedin-in"></i>
+                    <span class="sr-only">Linkedin</span>
+                </a>
                 <a href="https://youtube.com" aria-hidden="true">
-            <i class="fab fa-youtube"></i>
-            <span class="sr-only">Youtube</span>
-          </a>
+                    <i class="fab fa-youtube"></i>
+                    <span class="sr-only">Youtube</span>
+                </a>
             </div>
         </div>
     </div>
@@ -746,8 +769,8 @@
             <form role="search" method="get" class="search-popup__form" action="#">
                 <input type="text" id="search" placeholder="Search Here..." />
                 <button type="submit" aria-label="search submit" class="khidmat-btn">
-            <span><i class="icon-search"></i></span>
-          </button>
+                    <span><i class="icon-search"></i></span>
+                </button>
             </form>
         </div>
     </div>
@@ -755,17 +778,19 @@
     <a href="#" data-target="html" class="scroll-to-target scroll-to-top">
         <span class="scroll-to-top__text">back top</span>
         <span class="scroll-to-top__wrapper"><span class="scroll-to-top__inner"></span></span>
-      </a>
+    </a>
     <aside class="sidebar-one">
         <div class="sidebar-one__overlay sidebar-btn__toggler"></div>
         <div class="sidebar-one__content">
             <span class="sidebar-one__close sidebar-btn__toggler"><i class="fa fa-times"></i></span>
             <div class="sidebar-one__logo sidebar-one__item">
                 <a href="index.html" aria-label="logo image"><img src="images/khidmat-logo.png" width="155"
-              alt="logo-dark" /></a>
+                        alt="logo-dark" /></a>
             </div>
             <div class="sidebar-one__about sidebar-one__item">
-                <p class="sidebar-one__about__text">Khidmat Charitable Trust (KCT) is a Non-Government Organization (NGO) registered under the Government of India’s Public Trust Registration Act of 1950 on 12 December 2001.</p>
+                <p class="sidebar-one__about__text">Khidmat Charitable Trust (KCT) is a Non-Government Organization
+                    (NGO) registered under the Government of India’s Public Trust Registration Act of 1950 on 12
+                    December 2001.</p>
             </div>
             <div class="sidebar-one__information sidebar-one__item">
                 <h4 class="sidebar-one__title">Information</h4>
@@ -773,14 +798,16 @@
                     <li>
                         <span class="sidebar-one__information__icon icon-location"></span>
                         <address class="sidebar-one__information__address">
-                <p class="sidebar-one__information__text">C/O Educational & Welfare Foundation, P.T Mane Udyan, Mirza
-                  Galib Marg, Opp. Rolex Restaurant, Clare Road, Nagpada Junction, Mumbai: 400 008
-                </p>
-              </address>
+                            <p class="sidebar-one__information__text">C/O Educational & Welfare Foundation, P.T Mane
+                                Udyan, Mirza
+                                Galib Marg, Opp. Rolex Restaurant, Clare Road, Nagpada Junction, Mumbai: 400 008
+                            </p>
+                        </address>
                     </li>
                     <li>
                         <i class="sidebar-one__information__icon icon-envelope"></i>
-                        <p class="sidebar-one__information__text"><a href="mailto:donation@khidmattrust.org.com">donation@khidmattrust.org.com</a></p>
+                        <p class="sidebar-one__information__text"><a
+                                href="mailto:donation@khidmattrust.org.com">donation@khidmattrust.org.com</a></p>
                     </li>
                     <li>
                         <span class="sidebar-one__information__icon icon-phone"></span>
@@ -790,33 +817,76 @@
             </div>
             <div class="sidebar-one__socila social-link sidebar-one__item">
                 <a href="https://facebook.com">
-            <i class="fab fa-facebook-f" aria-hidden="true"></i>
-            <span class="sr-only">Facebook</span>
-          </a>
+                    <i class="fab fa-facebook-f" aria-hidden="true"></i>
+                    <span class="sr-only">Facebook</span>
+                </a>
                 <a href="https://twitter.com">
-            <i class="fab fa-twitter" aria-hidden="true"></i>
-            <span class="sr-only">Twitter</span>
-          </a>
+                    <i class="fab fa-twitter" aria-hidden="true"></i>
+                    <span class="sr-only">Twitter</span>
+                </a>
                 <a href="https://linkedin.com" aria-hidden="true">
-            <i class="fab fa-linkedin-in"></i>
-            <span class="sr-only">Linkedin</span>
-          </a>
+                    <i class="fab fa-linkedin-in"></i>
+                    <span class="sr-only">Linkedin</span>
+                </a>
                 <a href="https://youtube.com" aria-hidden="true">
-            <i class="fab fa-youtube"></i>
-            <span class="sr-only">Youtube</span>
-          </a>
+                    <i class="fab fa-youtube"></i>
+                    <span class="sr-only">Youtube</span>
+                </a>
             </div>
             <div class="sidebar-one__newsletter sidebar-one__item">
                 <label class="sidebar-one__title" for="sidebar-email">Newsletter Subscribe</label>
                 <form action="#" class="sidebar-one__newsletter__inner mc-form" data-url="MAILCHIMP_FORM_URL">
-                    <input type="email" name="sidebar-email" id="sidebar-email" class="sidebar-one__newsletter__input" placeholder="Email Address">
+                    <input type="email" name="sidebar-email" id="sidebar-email" class="sidebar-one__newsletter__input"
+                        placeholder="Email Address">
                     <button type="submit" class="sidebar-one__newsletter__btn"><i class="fa fa-paper-plane"
-                aria-hidden="true"></i></button>
+                            aria-hidden="true"></i></button>
                 </form>
                 <div class="mc-form__response"></div>
             </div>
         </div>
     </aside>
+    <script>
+        $(document).ready(function () {
+            var galleryCarousel = $('.owl-carousel');
+        
+            galleryCarousel.owlCarousel({
+                items: 1,
+                loop: false,
+                margin: 30, 
+                nav: false,
+                dots: true,
+                autoplay: false,
+                responsive: {
+                    0: {
+                        items: 1,
+                        margin: 20
+                    },
+                    768: {
+                        items: 2,
+                        margin: 30
+                    },
+                    992: {
+                        items: 2,
+                        margin: 30
+                    },
+                    1200: {
+                        items: 3,
+                        margin: 30
+                    }
+                }
+            });
+        
+            // Scroll event to navigate next slide on every scroll
+            $(window).on('wheel', function (e) {
+                if (e.originalEvent.deltaY > 0) {  // Scroll Down
+                    galleryCarousel.trigger('next.owl.carousel');
+                } else {  // Scroll Up
+                    galleryCarousel.trigger('prev.owl.carousel');
+                }
+            });
+        });
+        </script>
+    
     <script>
         let calScrollValue = () => {
             let scrollProgress = document.getElementById('progressbar');
@@ -824,27 +894,40 @@
             let calHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
             let scrollValue = Math.round((pos * 100) / calHeight);
             let progressValue = document.querySelector('.progressValue');
-    
+
             if (pos > 100) {
                 scrollProgress.style.display = 'grid';
             } else {
                 scrollProgress.style.display = 'none';
             }
-    
+
             // Corrected string interpolation
             progressValue.textContent = `${scrollValue}%`;
-            
+
             // Fixing the background style
             scrollProgress.style.background = `conic-gradient(#194eb9 ${scrollValue}%, #67ccff ${scrollValue}%)`;
         }
-    
+
         window.onscroll = calScrollValue;
         window.onload = calScrollValue;
-    
+
         document.getElementById('progress').addEventListener('click', () => {
             // Do nothing on click, just update the percentage text
         });
     </script>
+    <script>
+        const gallery = document.querySelector('.gallery-one__carousel');
+
+        gallery.addEventListener('wheel', (event) => {
+            if (event.deltaY > 0) {
+                gallery.scrollBy({ left: 300, behavior: 'smooth' }); // Scroll right
+            } else {
+                gallery.scrollBy({ left: -300, behavior: 'smooth' }); // Scroll left
+            }
+        });
+
+    </script>
+
 
     <script src="js/jquery-3.7.0.min.js"></script>
 
@@ -881,6 +964,7 @@
     <script src="js/imagesloaded.min.js"></script>
 
     <script src="js/cleenhearts.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 </body>
 
 </html>
