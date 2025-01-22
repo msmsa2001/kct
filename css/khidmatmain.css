@@ -9908,7 +9908,7 @@ body.megamenu-popup-active .mobile-nav__content {
     }
 
     .main-slider-one__item {
-        padding-bottom: 240px;
+        padding-bottom: 190px;
     }
 
     .main-slider-one__carousel .owl-dots .owl-dot {
@@ -10086,7 +10086,7 @@ body.megamenu-popup-active .mobile-nav__content {
       background-color: #777;
     } */
     .main-slider-one__btn {
-        margin-top: 30px;
+        /* margin-top: 30px; */
     }
 
     .cleenhearts-btn__text {
@@ -10177,7 +10177,7 @@ body.megamenu-popup-active .mobile-nav__content {
     }
 } */
 
-.main-slider-one__btn {
+/* .main-slider-one__btn {
     position: relative;
     display: flex;
     justify-content: flex-start;
@@ -10186,7 +10186,7 @@ body.megamenu-popup-active .mobile-nav__content {
     gap: 30px;
     z-index: 5;
     overflow: hidden;
-}
+} */
 
 .main-slider-one__btn .sliderTxt {
     font-size: 24px;
