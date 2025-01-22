@@ -27928,7 +27928,7 @@ body.boxed-wrapper .main-header__cart {
 }
 
 .dropdown-content {
-    display: none;
+    /* display: none; */
     /* position: absolute; */
     /* background-color: #f9f9f9; */
     /* min-width: 160px; */
@@ -28032,21 +28032,23 @@ body.boxed-wrapper .main-header__cart {
     }
 
     #cleenhearts-btn__text {
-        font-size: 10px !important;
+        font-size: 9px !important;
     }
 
     #cleenhearts-btn {
-        padding: 0px 5px 0px 5px;
+        padding: 3px 5px 3px 5px;
+        display: flex !important;
+        justify-content: center;
     }
     #main-header__right {
-        gap: 8px;
+        gap: 5px !important;
     }
+    .mobile-nav__btn {
+        width: 20px;}
 }
-@media screen and (max-width: 370px){
+@media screen and (max-width: 360px){
     #cleenhearts-btn__text {
-        font-size: 7px !important;
+        font-size: 6px !important;
     }
-    #cleenhearts-btn {
-        padding: 0px 1px 0px 1px;
-    }
+   
 }
