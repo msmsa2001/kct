@@ -28020,47 +28020,33 @@ body.boxed-wrapper .main-header__cart {
 }
 
 @media screen and (max-width: 700px) {
-    #main-header__btn #cleenhearts-btn__text {
+     #cleenhearts-btn__text {
         margin-left: 2px !important;
     }
 }
 
 @media screen and (max-width:500px) {
 
-    .main-header__btn .cleenhearts-btn__text {
+     #cleenhearts-btn__text {
         margin-left: 0;
     }
 
-    .cleenhearts-btn__text {
+    #cleenhearts-btn__text {
         font-size: 10px !important;
     }
 
-    .cleenhearts-btn__icon-box__inner span.icon-donate {
-        font-size: 10px;
-    }
-
-    .main-header__btn .cleenhearts-btn__icon-box {
-        width: 30px;
-        height: 30px;
-    }
-
-    .cleenhearts-btn__icon-box__inner span {
-        top: 39%;
-        left: 39%;
-    }
-
-    .cleenhearts-btn {
+    #cleenhearts-btn {
         padding: 0px 5px 0px 5px;
     }
-    .main-header__right {
+    #main-header__right {
         gap: 8px;
     }
 }
 @media screen and (max-width: 331px){
-    .cleenhearts-btn__text {
+    #cleenhearts-btn__text {
         font-size: 7px !important;
     }
-    .cleenhearts-btn {
+    #cleenhearts-btn {
         padding: 0px 1px 0px 1px;
     }
 }
