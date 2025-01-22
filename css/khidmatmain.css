@@ -28034,7 +28034,7 @@ body.boxed-wrapper .main-header__cart {
     }
 
     #cleenhearts-btn {
-        padding: 3px 5px 3px 5px;
+        padding: 3px 5px 3px 5px !important;
         display: flex !important;
         justify-content: center;
     }
