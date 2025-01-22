@@ -28042,7 +28042,7 @@ body.boxed-wrapper .main-header__cart {
         gap: 8px;
     }
 }
-@media screen and (max-width: 331px){
+@media screen and (max-width: 370px){
     #cleenhearts-btn__text {
         font-size: 7px !important;
     }
