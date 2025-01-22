@@ -1757,27 +1757,27 @@
     </script>
     <script>
         // Dropdown functionality
-document.querySelectorAll('.dropdown-btn').forEach(button => {
-    button.addEventListener('click', () => {
-        const dropdownContent = button.nextElementSibling;
-        
-        // Toggle the dropdown content visibility
-        if (dropdownContent.style.display === 'block') {
-            dropdownContent.style.display = 'none';
-        } else {
-            dropdownContent.style.display = 'block';
-        }
-    });
-});
+        document.querySelectorAll('.dropdown-btn').forEach(button => {
+            button.addEventListener('click', () => {
+                const dropdownContent = button.nextElementSibling;
 
-// Optional: Close dropdowns when clicking outside
-document.addEventListener('click', (event) => {
-    document.querySelectorAll('.dropdown-content').forEach(dropdown => {
-        if (!dropdown.parentElement.contains(event.target)) {
-            dropdown.style.display = 'none';
-        }
-    });
-});
+                // Toggle the dropdown content visibility
+                if (dropdownContent.style.display === 'block') {
+                    dropdownContent.style.display = 'none';
+                } else {
+                    dropdownContent.style.display = 'block';
+                }
+            });
+        });
+
+        // Optional: Close dropdowns when clicking outside
+        document.addEventListener('click', (event) => {
+            document.querySelectorAll('.dropdown-content').forEach(dropdown => {
+                if (!dropdown.parentElement.contains(event.target)) {
+                    dropdown.style.display = 'none';
+                }
+            });
+        });
 
     </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
