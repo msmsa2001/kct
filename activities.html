@@ -60,6 +60,52 @@
 
     <!-- Owl Carousel JS -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <style>
+        .custom-dots {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+            gap: 10px;
+            /* Space between dots */
+        }
+
+        .custom-dots .dot {
+            width: 12px;
+            height: 12px;
+            background-color: #ccc;
+            /* Inactive dot color */
+            border-radius: 50%;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .custom-dots .dot.active {
+            background-color: #333;
+            /* Active dot color */
+        }
+
+        .gallery-navigation {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .gallery-prev,
+        .gallery-next {
+            background-color: #c62b23;
+            color: #fff;
+            border: none;
+            padding:4px 25px;
+            margin: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            border-radius: 5px;
+        }
+
+        .gallery-prev:hover,
+        .gallery-next:hover {
+            background-color: #cc5500;
+        }
+    </style>
 </head>
 
 <body class="custom-cursor">
@@ -219,44 +265,12 @@
 
             <img src="images/shapes/about-shape-1-2.png" alt="" class="about-one__hand" />
         </section>
-        <!-- /.about-one section-space -->
 
         <section class="gallery-one section-space swiper-container">
             <div class="container">
-
-                <h6 class="sec-title__tagline sec-title__tagline--center mb-5">
-                    Gallery</h6>
-
-                <div class="gallery-one__carousel cleenhearts-owl__carousel cleenhearts-owl__carousel--basic-nav owl-carousel owl-theme swiper-wrapper"
-                    data-owl-options='{
-                          "items": 1,
-                          "margin": 0,
-                          "loop": false,
-                          "smartSpeed": 1,
-                          "nav": false,
-                          "navText": ["<span class=\"icon-arrow-left\"></span>","<span class=\"icon-arrow-right\"></span>"],
-                          "dots": true,
-                          "autoplay": false,
-                          "responsive": {
-                               "0": {
-                               "items": 1,
-                               "margin": 20
-                                    },
-                               "768": {
-                               "items": 2,
-                               "margin": 30
-                                },
-                                "992": {
-                                "items": 2,
-                                "margin": 30
-                                  },
-                                "1200": {
-                                "items": 3,
-                                 "margin": 30
-                                 }
-                                  }
-                                   }'>
-                    <div class="item swiper-wrapper">
+                <h6 class="sec-title__tagline sec-title__tagline--center mb-5">Gallery</h6>
+                <div class="gallery-one__carousel cleenhearts-owl__carousel owl-carousel ">
+                    <div class="item">
                         <div class="gallery-one__card swiper-slide">
                             <img src="images/gallery/gallery-slide-1.jpg" alt="" />
                             <div class="gallery-one__card__hover">
@@ -264,11 +278,8 @@
                                     <span class="gallery-one__card__icon"></span>
                                 </a>
                             </div>
-                            <!-- /.gallery-one__card__hover -->
                         </div>
-                        <!-- /.gallery-one__card -->
                     </div>
-                    <!-- /.item -->
                     <div class="item">
                         <div class="gallery-one__card">
                             <img src="images/gallery/gallery-slide-2.jpg" alt="" />
@@ -277,11 +288,8 @@
                                     <span class="gallery-one__card__icon"></span>
                                 </a>
                             </div>
-                            <!-- /.gallery-one__card__hover -->
                         </div>
-                        <!-- /.gallery-one__card -->
                     </div>
-                    <!-- /.item -->
                     <div class="item">
                         <div class="gallery-one__card">
                             <img src="images/gallery/gallery-slide-3.jpg" alt="" />
@@ -290,11 +298,8 @@
                                     <span class="gallery-one__card__icon"></span>
                                 </a>
                             </div>
-                            <!-- /.gallery-one__card__hover -->
                         </div>
-                        <!-- /.gallery-one__card -->
                     </div>
-                    <!-- /.item -->
                     <div class="item">
                         <div class="gallery-one__card">
                             <img src="images/gallery/gallery-slide-4.jpg" alt="" />
@@ -303,11 +308,8 @@
                                     <span class="gallery-one__card__icon"></span>
                                 </a>
                             </div>
-                            <!-- /.gallery-one__card__hover -->
                         </div>
-                        <!-- /.gallery-one__card -->
                     </div>
-                    <!-- /.item -->
                     <div class="item">
                         <div class="gallery-one__card">
                             <img src="images/gallery/gallery-slide-5.jpg" alt="" />
@@ -316,13 +318,8 @@
                                     <span class="gallery-one__card__icon"></span>
                                 </a>
                             </div>
-                            <!-- /.gallery-one__card__hover -->
                         </div>
-                        <!-- /.gallery-one__card -->
                     </div>
-
-
-                    <!-- /.item -->
                     <div class="item">
                         <div class="gallery-one__card">
                             <img src="images/gallery/gallery-slide-6.jpg" alt="" />
@@ -331,13 +328,8 @@
                                     <span class="gallery-one__card__icon"></span>
                                 </a>
                             </div>
-                            <!-- /.gallery-one__card__hover -->
                         </div>
-                        <!-- /.gallery-one__card -->
                     </div>
-
-
-                    <!-- /.item -->
                     <div class="item">
                         <div class="gallery-one__card">
                             <img src="images/gallery/gallery-slide-7.jpg" alt="" />
@@ -346,14 +338,8 @@
                                     <span class="gallery-one__card__icon"></span>
                                 </a>
                             </div>
-                            <!-- /.gallery-one__card__hover -->
                         </div>
-                        <!-- /.gallery-one__card -->
                     </div>
-
-
-
-                    <!-- /.item -->
                     <div class="item">
                         <div class="gallery-one__card">
                             <img src="images/gallery/gallery-slide-8.jpg" alt="" />
@@ -362,13 +348,8 @@
                                     <span class="gallery-one__card__icon"></span>
                                 </a>
                             </div>
-                            <!-- /.gallery-one__card__hover -->
                         </div>
-                        <!-- /.gallery-one__card -->
                     </div>
-
-
-                    <!-- /.item -->
                     <div class="item">
                         <div class="gallery-one__card">
                             <img src="images/gallery/gallery-slide-9.jpg" alt="" />
@@ -377,13 +358,8 @@
                                     <span class="gallery-one__card__icon"></span>
                                 </a>
                             </div>
-                            <!-- /.gallery-one__card__hover -->
                         </div>
-                        <!-- /.gallery-one__card -->
                     </div>
-
-
-                    <!-- /.item -->
                     <div class="item">
                         <div class="gallery-one__card">
                             <img src="images/gallery/gallery-slide-10.jpg" alt="" />
@@ -392,13 +368,8 @@
                                     <span class="gallery-one__card__icon"></span>
                                 </a>
                             </div>
-                            <!-- /.gallery-one__card__hover -->
                         </div>
-                        <!-- /.gallery-one__card -->
                     </div>
-
-
-                    <!-- /.item -->
                     <div class="item">
                         <div class="gallery-one__card">
                             <img src="images/gallery/gallery-slide-11.jpg" alt="" />
@@ -407,13 +378,8 @@
                                     <span class="gallery-one__card__icon"></span>
                                 </a>
                             </div>
-                            <!-- /.gallery-one__card__hover -->
                         </div>
-                        <!-- /.gallery-one__card -->
                     </div>
-
-
-                    <!-- /.item -->
                     <div class="item">
                         <div class="gallery-one__card">
                             <img src="images/gallery/gallery-slide-12.jpg" alt="" />
@@ -422,13 +388,8 @@
                                     <span class="gallery-one__card__icon"></span>
                                 </a>
                             </div>
-                            <!-- /.gallery-one__card__hover -->
                         </div>
-                        <!-- /.gallery-one__card -->
                     </div>
-
-
-                    <!-- /.item -->
                     <div class="item">
                         <div class="gallery-one__card">
                             <img src="images/gallery/gallery-slide-13.jpg" alt="" />
@@ -437,12 +398,8 @@
                                     <span class="gallery-one__card__icon"></span>
                                 </a>
                             </div>
-                            <!-- /.gallery-one__card__hover -->
                         </div>
-                        <!-- /.gallery-one__card -->
                     </div>
-
-                    <!-- /.item -->
                     <div class="item">
                         <div class="gallery-one__card">
                             <img src="images/gallery/gallery-slide-14.jpg" alt="" />
@@ -451,13 +408,8 @@
                                     <span class="gallery-one__card__icon"></span>
                                 </a>
                             </div>
-                            <!-- /.gallery-one__card__hover -->
                         </div>
-                        <!-- /.gallery-one__card -->
                     </div>
-
-
-                    <!-- /.item -->
                     <div class="item">
                         <div class="gallery-one__card">
                             <img src="images/gallery/gallery-slide-15.jpg" alt="" />
@@ -466,13 +418,8 @@
                                     <span class="gallery-one__card__icon"></span>
                                 </a>
                             </div>
-                            <!-- /.gallery-one__card__hover -->
                         </div>
-                        <!-- /.gallery-one__card -->
                     </div>
-
-
-                    <!-- /.item -->
                     <div class="item">
                         <div class="gallery-one__card">
                             <img src="images/gallery/gallery-slide-16.jpg" alt="" />
@@ -481,13 +428,8 @@
                                     <span class="gallery-one__card__icon"></span>
                                 </a>
                             </div>
-                            <!-- /.gallery-one__card__hover -->
                         </div>
-                        <!-- /.gallery-one__card -->
                     </div>
-
-
-                    <!-- /.item -->
                     <div class="item">
                         <div class="gallery-one__card">
                             <img src="images/gallery/gallery-slide-17.jpg" alt="" />
@@ -496,13 +438,8 @@
                                     <span class="gallery-one__card__icon"></span>
                                 </a>
                             </div>
-                            <!-- /.gallery-one__card__hover -->
                         </div>
-                        <!-- /.gallery-one__card -->
                     </div>
-
-
-                    <!-- /.item -->
                     <div class="item">
                         <div class="gallery-one__card">
                             <img src="images/gallery/gallery-slide-18.jpg" alt="" />
@@ -511,13 +448,8 @@
                                     <span class="gallery-one__card__icon"></span>
                                 </a>
                             </div>
-                            <!-- /.gallery-one__card__hover -->
                         </div>
-                        <!-- /.gallery-one__card -->
                     </div>
-
-
-                    <!-- /.item -->
                     <div class="item">
                         <div class="gallery-one__card">
                             <img src="images/gallery/gallery-slide-18.jpg" alt="" />
@@ -526,12 +458,8 @@
                                     <span class="gallery-one__card__icon"></span>
                                 </a>
                             </div>
-                            <!-- /.gallery-one__card__hover -->
                         </div>
-                        <!-- /.gallery-one__card -->
                     </div>
-
-                    <!-- /.item -->
                     <div class="item">
                         <div class="gallery-one__card">
                             <img src="images/gallery/gallery-slide-19.jpg" alt="" />
@@ -540,13 +468,8 @@
                                     <span class="gallery-one__card__icon"></span>
                                 </a>
                             </div>
-                            <!-- /.gallery-one__card__hover -->
                         </div>
-                        <!-- /.gallery-one__card -->
                     </div>
-
-
-                    <!-- /.item -->
                     <div class="item">
                         <div class="gallery-one__card">
                             <img src="images/gallery/gallery-slide-20.jpg" alt="" />
@@ -555,19 +478,20 @@
                                     <span class="gallery-one__card__icon"></span>
                                 </a>
                             </div>
-                            <!-- /.gallery-one__card__hover -->
                         </div>
-                        <!-- /.gallery-one__card -->
                     </div>
-
-
-                    <!-- /.item -->
                 </div>
-                <!-- /.gallery-one__carousel -->
+                <!-- <div class="custom-dots">
+                    <div class="dot" data-index="0"></div>
+                    <div class="dot" data-index="1"></div>
+                    <div class="dot" data-index="2"></div>
+                </div> -->
+                <div class="gallery-navigation">
+                    <button class="gallery-prev"><i class="fas fa-chevron-left"></i></button>
+                    <button class="gallery-next"><i class="fas fa-chevron-right"></i></button>
+                </div>
             </div>
-            <!-- /.container-fluid -->
         </section>
-        <!-- /.gallery-one section-space -->
 
 
         <section class="subscribe">
@@ -852,6 +776,44 @@
         </div>
     </aside>
     <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const slides = document.querySelector(".gallery-slides");
+            const items = document.querySelectorAll(".item");
+            const dotsContainer = document.querySelector(".custom-dots");
+
+            let currentIndex = 0;
+            const totalSlides = items.length;
+
+            // Create dots dynamically
+            for (let i = 0; i < totalSlides; i++) {
+                const dot = document.createElement("div");
+                dot.classList.add("dot");
+                dot.dataset.index = i;
+                dotsContainer.appendChild(dot);
+            }
+
+            const dots = document.querySelectorAll(".dot");
+
+            function updateGallery(index) {
+                slides.style.transform = `translateX(-${index * 100}%)`;
+                dots.forEach(dot => dot.classList.remove("active"));
+                dots[index].classList.add("active");
+            }
+
+            // Click event for dots
+            dots.forEach(dot => {
+                dot.addEventListener("click", function () {
+                    currentIndex = parseInt(this.dataset.index);
+                    updateGallery(currentIndex);
+                });
+            });
+
+            // Set first dot as active
+            updateGallery(currentIndex);
+        });
+
+    </script>
+    <script>
         $(document).ready(function () {
             var galleryCarousel = $('.owl-carousel');
 
@@ -892,6 +854,35 @@
             });
         });
     </script>
+    <script>
+        $(document).ready(function () {
+            var owl = $(".gallery-one__carousel");
+
+            owl.owlCarousel({
+                loop: true,
+                margin: 10,
+                nav: false,  /* We will use custom navigation */
+                dots: false,
+                autoplay: true,
+                autoplayTimeout: 3000,
+                responsive: {
+                    0: { items: 1 },
+                    600: { items: 2 },
+                    1000: { items: 3 }
+                }
+            });
+
+            // Custom navigation
+            $(".gallery-prev").click(function () {
+                owl.trigger("prev.owl.carousel");
+            });
+
+            $(".gallery-next").click(function () {
+                owl.trigger("next.owl.carousel");
+            });
+        });
+    </script>
+
 
     <script>
         let calScrollValue = () => {
