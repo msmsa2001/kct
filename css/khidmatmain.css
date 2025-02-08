@@ -1,69 +1,3 @@
-/*--------------------------------------------------------------
->>> TABLE OF CONTENTS:
-----------------------------------------------------------------
-# Utility
-# Common
-# Cards
-# Topbar
-# Navigations
-# Home Showcase
-# Mobile Nav
-# Search Popup
-# Form
-# Page Header
-# Google Map
-# Client Carousel
-# Custom Cursor
-# Animations
-# Footer
-# Contact
-# Hero Slider
-# About
-# Accordion
-# Why choose
-# Testimonials
-# Video
-# About Info
-# Service
-# Worship
-# Prayer Time
-# Support
-# Gallery
-# Sidebar
-# Blog
-# Blog Details
-# How Work
-# Comments
-# Shop
-# Shop Details
-# Cart
-# Checkout
-# Login
-# Error 404
-# Faq
-# Pricing
-# Board Member
-# Help Donate
-# Story
-# Inspiring
-# Team
-# Help People
-# Worldwide
-# Volunteer
-# Volunteer Details
-# Become Volunteer
-# Events
-# Event Details
-# Donars
-# Donations
-# Donation Details
-# Donate
-# Join
-# Events Gallery
-# Subscribe
-# Boxed Home
---------------------------------------------------------------*/
-
 :root {
     --cleenhearts-font: "DM Sans", sans-serif;
     --cleenhearts-heading-font: "Quicksand", sans-serif;
@@ -444,8 +378,8 @@ textarea {
 
 @media (max-width: 575px) {
     .section-space {
-        padding-top: 30px;
-        padding-bottom: 80px;
+        padding-top: 40px;
+        padding-bottom: 40px;
     }
 }
 
@@ -2069,7 +2003,7 @@ textarea {
 
 @media (max-width: 575px) {
     .testimonials-card__text {
-        font-size: 18px;
+        font-size: 14px;
     }
 }
 
@@ -7895,7 +7829,7 @@ body.megamenu-popup-active .mobile-nav__content {
     left: 0;
     width: 100%;
     height: 100%;
-background: linear-gradient(90deg, RGBA(var(--cleenhearts-base-rgb, 73, 48, 86), 0.6) 0%, RGBA(var(--cleenhearts-base-rgb, 73, 48, 86), 0.6) 100%);
+    background: linear-gradient(90deg, RGBA(var(--cleenhearts-base-rgb, 73, 48, 86), 0.6) 0%, RGBA(var(--cleenhearts-base-rgb, 73, 48, 86), 0.6) 100%);
     z-index: 1;
 }
 
@@ -9711,11 +9645,6 @@ background: linear-gradient(90deg, RGBA(var(--cleenhearts-base-rgb, 73, 48, 86),
     width: 100%;
 }
 
-/* .main-slider-one .item
-.main-slider-one__wrapper{
-    border-radius: 20px !important;
-} */
-
 @media (max-width: 1599px) {
     .main-slider-one__wrapper {
         margin: 0 15px;
@@ -9868,7 +9797,7 @@ background: linear-gradient(90deg, RGBA(var(--cleenhearts-base-rgb, 73, 48, 86),
     position: relative;
     z-index: 3;
     padding-top: 150px;
-    padding-bottom: 150px;
+    /* padding-bottom: 150px; */
     /* margin-top: 7rem; */
 }
 
@@ -9886,11 +9815,11 @@ background: linear-gradient(90deg, RGBA(var(--cleenhearts-base-rgb, 73, 48, 86),
 
 @media (max-width: 550px) {
     .beneficiaries {
-        margin-top: -10rem;
+        /* margin-top: -10rem; */
     }
 
     .main-slider-one__item {
-        padding-bottom: 240px;
+        /* padding-bottom: 240px; */
     }
 
     .main-slider-one__carousel .owl-dots .owl-dot {
@@ -9898,17 +9827,17 @@ background: linear-gradient(90deg, RGBA(var(--cleenhearts-base-rgb, 73, 48, 86),
     }
 
     .main-slider-one__carousel .owl-dots {
-        top: 21% !important;
+        /* top: 21% !important; */
     }
 }
 
 @media (max-width: 400px) {
     .beneficiaries {
-        margin-top: -41rem;
+        /* margin-top: -41rem; */
     }
 
     .main-slider-one__item {
-        padding-bottom: 190px;
+        /* padding-bottom: 190px; */
     }
 
     .main-slider-one__carousel .owl-dots .owl-dot {
@@ -9916,7 +9845,7 @@ background: linear-gradient(90deg, RGBA(var(--cleenhearts-base-rgb, 73, 48, 86),
     }
 
     .main-slider-one__carousel .owl-dots {
-        top: 11% !important;
+        /* top: 11% !important; */
     }
 
     .subscribe__title {
@@ -9998,6 +9927,7 @@ background: linear-gradient(90deg, RGBA(var(--cleenhearts-base-rgb, 73, 48, 86),
     position: relative;
     z-index: 3;
     padding: 0 0 0 90px;
+    padding-bottom: 5rem;
 }
 
 @media (max-width: 1199px) {
@@ -10068,7 +9998,7 @@ background: linear-gradient(90deg, RGBA(var(--cleenhearts-base-rgb, 73, 48, 86),
 
 @media (max-width: 991px) {
     .main-slider-one__title {
-        font-size: 32px;
+        font-size: 16px;
         margin-bottom: -20px;
         line-height: 40px;
     }
@@ -10112,7 +10042,11 @@ background: linear-gradient(90deg, RGBA(var(--cleenhearts-base-rgb, 73, 48, 86),
         left: 7px;
     }
 }
-
+/* @media screen and (max-width:990px){
+    .main-slider-one__title{
+        font-size: 16px !important;
+    }
+} */
 @media (max-width: 767px) {
     .main-slider-one__title {
         font-size: 12px;
@@ -10130,7 +10064,7 @@ background: linear-gradient(90deg, RGBA(var(--cleenhearts-base-rgb, 73, 48, 86),
         background-color: white;
     } */
     .main-slider-one__bg {
-        height: 70%;
+        /* height: 70%; */
     }
 }
 
@@ -10385,6 +10319,10 @@ background: linear-gradient(90deg, RGBA(var(--cleenhearts-base-rgb, 73, 48, 86),
         padding: 10px 10px;
     }
 
+    .container2 .dd-box {
+        height: 90px;
+    }
+
     .container2 .box .box-content .numbers,
     .numbers1 {
         font-size: 28px;
@@ -10392,7 +10330,7 @@ background: linear-gradient(90deg, RGBA(var(--cleenhearts-base-rgb, 73, 48, 86),
 
     .container2 .box .box-content .below-number,
     .dropdown .dropdown-btn {
-        font-size: 14px;
+        font-size: 13px;
     }
 
     .container1 .para1,
@@ -27632,7 +27570,7 @@ body.boxed-wrapper .main-header__cart {
 
 .whatsapp-float img {
     width: 60px;
-    height: 60px;
+    height: 100px;
     border-radius: 50%;
     /* box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2); */
     transition: transform 0.3s ease;
@@ -27651,7 +27589,7 @@ body.boxed-wrapper .main-header__cart {
 
 @media (max-width: 576px) {
     .main-slider-one__bg {
-        height: 58%;
+        /* height: 58%; */
     }
 
     .main-slider-one__title {
@@ -27670,7 +27608,7 @@ body.boxed-wrapper .main-header__cart {
 
 @media (max-width: 515px) {
     .main-slider-one__bg {
-        height: 40%;
+        /* height: 40%; */
     }
 
     .main-slider-one__title {
@@ -27684,7 +27622,7 @@ body.boxed-wrapper .main-header__cart {
     } */
     .main-slider-one__carousel .owl-dots {
         right: 17px;
-        top: 36%;
+        /* top: 36%; */
     }
 
     .main-slider-one__carousel .owl-dots .owl-dot span {
@@ -27700,7 +27638,7 @@ body.boxed-wrapper .main-header__cart {
 
 @media (max-width: 400px) {
     .main-slider-one__bg {
-        height: 21%;
+        /* height: 21%; */
     }
 
     .main-slider-one__title {
@@ -27710,7 +27648,7 @@ body.boxed-wrapper .main-header__cart {
     }
 
     .main-slider-one__btn .sliderTxt {
-        margin-bottom: 30rem;
+        /* margin-bottom: 30rem; */
     }
 }
 
@@ -27906,6 +27844,10 @@ body.boxed-wrapper .main-header__cart {
     .container2 .box .box-content .below-number {
         font-size: 11px;
     }
+
+    .main-slider-one__content {
+        padding-bottom: 1rem;
+    }
 }
 
 @media (max-width: 600px) {
@@ -27928,12 +27870,14 @@ body.boxed-wrapper .main-header__cart {
     cursor: pointer;
     display: flex;
     gap: 8px;
-    
+
 }
-.dropdown-arrow i{
-    color:  #c62b23;
+
+.dropdown-arrow i {
+    color: #c62b23;
     font-size: 14px;
 }
+
 .dropdown-content {
     /* display: none; */
     /* position: absolute; */
@@ -27951,10 +27895,14 @@ body.boxed-wrapper .main-header__cart {
     /* text-align: left; */
     text-decoration: none;
     /* display: block; */
+    line-height: 1.2;
+    font-size: 14px;
 }
 
 .dropdown:hover .dropdown-content {
-    /* display: block; */}
+    /* display: block; */
+}
+
 .donate-quote {
     color: #204a8f;
     margin-bottom: 1rem;
@@ -28026,14 +27974,14 @@ body.boxed-wrapper .main-header__cart {
 }
 
 @media screen and (max-width: 700px) {
-     #cleenhearts-btn__text {
+    #cleenhearts-btn__text {
         margin-left: 2px !important;
     }
 }
 
 @media screen and (max-width:500px) {
 
-     #cleenhearts-btn__text {
+    #cleenhearts-btn__text {
         margin-left: 0;
     }
 
@@ -28046,26 +27994,19 @@ body.boxed-wrapper .main-header__cart {
         display: flex !important;
         justify-content: center;
     }
+
     #main-header__right {
         gap: 5px !important;
     }
+
     .mobile-nav__btn {
-        width: 20px;}
+        width: 20px;
+    }
 }
-@media screen and (max-width: 360px){
+
+@media screen and (max-width: 360px) {
     #cleenhearts-btn__text {
         font-size: 6px !important;
     }
-   
-}
 
-@media (max-width: 549px) {
-    .dropdown-content {
-        display: none; /* Default hidden state */
-        position: static; /* Ensure proper placement */
-    }
-
-    .dropdown-content.active {
-        display: block; /* Show dropdown on click */
-    }
 }
