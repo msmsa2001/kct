@@ -27912,6 +27912,12 @@ body.boxed-wrapper .main-header__cart {
     .donate-quote {
         font-size: 18px !important;
     }
+    .dropdown-arrow i{
+        font-size: 10px;
+    }
+    .dropdown-content a{
+        font-size: 12px;
+    }
 }
 
 .x-logo {
