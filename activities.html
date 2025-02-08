@@ -94,7 +94,7 @@
             background-color: #c62b23;
             color: #fff;
             border: none;
-            padding:4px 25px;
+            padding: 4px 25px;
             margin: 5px;
             cursor: pointer;
             font-size: 16px;
@@ -205,7 +205,7 @@
         </header>
 
         <section class="page-header @@extraClassName">
-            <div class="page-header__bg" style="background-image: url('');"></div>
+            <div class="page-header__bg" style="background-image: url('images/about/topbar.jpeg');"></div>
             <!-- /.page-header__bg -->
             <div class="container">
                 <h2 class="page-header__title">Activities</h2>
@@ -481,15 +481,15 @@
                         </div>
                     </div>
                 </div>
-                <!-- <div class="custom-dots">
-                    <div class="dot" data-index="0"></div>
+                <div class="custom-dots">
+                    <!-- <div class="dot" data-index="0"></div>
                     <div class="dot" data-index="1"></div>
-                    <div class="dot" data-index="2"></div>
-                </div> -->
-                <div class="gallery-navigation">
+                    <div class="dot" data-index="2"></div> -->
+                </div>
+                <!-- <div class="gallery-navigation">
                     <button class="gallery-prev"><i class="fas fa-chevron-left"></i></button>
                     <button class="gallery-next"><i class="fas fa-chevron-right"></i></button>
-                </div>
+                </div> -->
             </div>
         </section>
 
@@ -775,7 +775,7 @@
             </div> -->
         </div>
     </aside>
-    <script>
+    <!-- <script>
         document.addEventListener("DOMContentLoaded", function () {
             const slides = document.querySelector(".gallery-slides");
             const items = document.querySelectorAll(".item");
@@ -784,7 +784,6 @@
             let currentIndex = 0;
             const totalSlides = items.length;
 
-            // Create dots dynamically
             for (let i = 0; i < totalSlides; i++) {
                 const dot = document.createElement("div");
                 dot.classList.add("dot");
@@ -800,7 +799,6 @@
                 dots[index].classList.add("active");
             }
 
-            // Click event for dots
             dots.forEach(dot => {
                 dot.addEventListener("click", function () {
                     currentIndex = parseInt(this.dataset.index);
@@ -808,60 +806,91 @@
                 });
             });
 
-            // Set first dot as active
             updateGallery(currentIndex);
         });
 
-    </script>
+    </script> -->
     <script>
-        $(document).ready(function () {
-            var galleryCarousel = $('.owl-carousel');
+        document.addEventListener("DOMContentLoaded", function () {
+    const dotsContainer = document.querySelector(".custom-dots");
+    const totalDots = 3;
 
-            galleryCarousel.owlCarousel({
-                items: 1,
-                loop: false,
-                margin: 30,
-                nav: false,
-                dots: true,
-                autoplay: false,
-                responsive: {
-                    0: {
-                        items: 1,
-                        margin: 20
-                    },
-                    768: {
-                        items: 2,
-                        margin: 30
-                    },
-                    992: {
-                        items: 2,
-                        margin: 30
-                    },
-                    1200: {
-                        items: 3,
-                        margin: 30
-                    }
-                }
-            });
+    // Create 3 dots dynamically
+    for (let i = 0; i < totalDots; i++) {
+        const dot = document.createElement("div");
+        dot.classList.add("dot");
+        dot.dataset.index = i;
+        dotsContainer.appendChild(dot);
+    }
 
-            // Scroll event to navigate next slide on every scroll
-            $(window).on('wheel', function (e) {
-                if (e.originalEvent.deltaY > 0) {  // Scroll Down
-                    galleryCarousel.trigger('next.owl.carousel');
-                } else {  // Scroll Up
-                    galleryCarousel.trigger('prev.owl.carousel');
-                }
-            });
+    const dots = document.querySelectorAll(".dot");
+    let galleryCarousel; // Store Owl Carousel instance
+
+    // Initialize Owl Carousel
+    $('.owl-carousel').owlCarousel({
+        items: 1,
+        loop: false,
+        margin: 30,
+        nav: false,
+        dots: false, // Disable default dots
+        autoplay: false,
+        responsive: {
+            0: { items: 1, margin: 20 },
+            768: { items: 2, margin: 30 },
+            992: { items: 2, margin: 30 },
+            1200: { items: 3, margin: 30 }
+        },
+        onInitialized: function (event) {
+            galleryCarousel = this; // Store the Owl Carousel instance
+            updateDots(event);
+        },
+        onChanged: updateDots
+    });
+
+    // Function to update active dot
+    function updateDots(event) {
+        const currentIndex = event.item.index;
+        const slidesPerDot = Math.ceil(event.item.count / totalDots);
+        const activeDotIndex = Math.floor(currentIndex / slidesPerDot);
+
+        dots.forEach((dot, index) => {
+            dot.classList.toggle("active", index === activeDotIndex);
         });
+    }
+
+    // Click event for custom dots
+    dots.forEach((dot, index) => {
+        dot.addEventListener("click", function () {
+            if (!galleryCarousel) return; // If Owl Carousel is not initialized yet
+
+            const slidesPerDot = Math.ceil(galleryCarousel.items().length / totalDots);
+            const targetSlide = index * slidesPerDot;
+
+            galleryCarousel.to(targetSlide); // Move to target slide
+        });
+    });
+
+    // Scroll event to navigate next slide on every scroll
+    $(window).on('wheel', function (e) {
+        if (!galleryCarousel) return; // Prevent error if carousel is not loaded
+
+        if (e.originalEvent.deltaY > 0) {
+            galleryCarousel.next();
+        } else {
+            galleryCarousel.prev();
+        }
+    });
+});
+
     </script>
-    <script>
+    <!-- <script>
         $(document).ready(function () {
             var owl = $(".gallery-one__carousel");
 
             owl.owlCarousel({
                 loop: true,
                 margin: 10,
-                nav: false,  /* We will use custom navigation */
+                nav: false,  
                 dots: false,
                 autoplay: true,
                 autoplayTimeout: 3000,
@@ -872,7 +901,6 @@
                 }
             });
 
-            // Custom navigation
             $(".gallery-prev").click(function () {
                 owl.trigger("prev.owl.carousel");
             });
@@ -881,7 +909,7 @@
                 owl.trigger("next.owl.carousel");
             });
         });
-    </script>
+    </script> -->
 
 
     <script>
