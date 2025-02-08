@@ -28000,7 +28000,7 @@ body.boxed-wrapper .main-header__cart {
     }
 
     #cleenhearts-btn {
-        padding: 5px 7px 5px 7px !important;
+        padding: 7px 9px 7px 9px !important;
         display: flex !important;
         justify-content: center;
     }
@@ -28016,7 +28016,9 @@ body.boxed-wrapper .main-header__cart {
 
 @media screen and (max-width: 360px) {
     #cleenhearts-btn__text {
-        font-size: 6px !important;
+        font-size: 7.5px !important;
     }
-
+    #cleenhearts-btn {
+        padding: 5px 2px 5px 2px !important;
+    }
 }
