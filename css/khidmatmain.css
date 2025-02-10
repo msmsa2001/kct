@@ -27593,7 +27593,7 @@ body.boxed-wrapper .main-header__cart {
 #about-two{
     display: none;
 }
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
     .whatsapp-float img {
         width: 50px;
         height: 78px;
