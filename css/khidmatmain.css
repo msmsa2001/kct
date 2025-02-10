@@ -5709,7 +5709,7 @@ textarea {
 
 @media (max-width: 1199px) and (max-width: 412px) {
     .main-header__right {
-        gap: 20px;
+        gap: 10px;
     }
 }
 
@@ -17056,7 +17056,11 @@ li:hover .sidebar__comments__icon::after {
     .blog-one__carousel .owl-dots,
     .blog-two__carousel .owl-dots {
         position: static;
-        margin-top: 60px !important;
+        margin-top: 5px !important;
+        gap: 10px !important;
+    }
+    .dropdown-content{
+        margin-left: 1rem !important;
     }
 }
 
@@ -21402,8 +21406,15 @@ li:hover .sidebar__comments__icon::after {
     }
 
     .vismisWrapp .vmcard {
-        width: 80%;
+        width: 100%;
         margin-bottom: 20px;
+    }
+    .testimonials-one .testimonials-card__quote span{
+        font-size: 15px;
+    }
+    .testimonials-one .testimonials-card__quote{
+        width: 50px;
+        height: 50px;
     }
 }
 
@@ -27579,11 +27590,19 @@ body.boxed-wrapper .main-header__cart {
 .whatsapp-float img:hover {
     transform: scale(1.1);
 }
-
+#about-two{
+    display: none;
+}
 @media (max-width: 768px) {
     .whatsapp-float img {
         width: 50px;
         height: 78px;
+    }
+    #about-one{
+        display: none;
+    }
+    #about-two{
+        display: block;
     }
 }
 
@@ -28010,7 +28029,7 @@ body.boxed-wrapper .main-header__cart {
     }
 
     .mobile-nav__btn {
-        width: 20px;
+        width: 15px;
     }
 }
 
@@ -28019,6 +28038,6 @@ body.boxed-wrapper .main-header__cart {
         font-size: 7.5px !important;
     }
     #cleenhearts-btn {
-        padding: 5px 2px 5px 2px !important;
+        padding: 7px 5px 7px 5px !important;
     }
 }
