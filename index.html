@@ -19,6 +19,8 @@
         rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500;600;700&amp;display=swap"
         rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
     <link href="https://fonts.googleapis.com/css2?family=Castoro&amp;display=swap" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css2?family=Schoolbell&amp;display=swap" rel="stylesheet" />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
@@ -122,17 +124,30 @@
                                 <li>
                                     <a href="about.html">About Us</a>
                                 </li>
-                                <li class="">
-                                    <a href="activities.html">Activities</a>
+                                <li class="dropdown">
+                                    <a href="activities.html">Project <i class="fa-solid fa-chevron-down"></i></a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="">Project 1</a></li>
+                                        <li><a href="">Project 2</a></li>
+                                        <li><a href="">Project 3</a></li>
+                                    </ul>
                                 </li>
-                                <li class="">
-                                    <a href="benefits.html">Benefits</a>
+                                <li>
+                                    <a href="benefits.html">Corporate</a>
                                 </li>
-                                <li class="">
-                                    <a href="careers.html">Careers</a>
+                                <li>
+                                    <a href="careers.html">Activity</a>
                                 </li>
-                                <li class="">
-                                    <a href="contact.html">Contacts</a>
+                                <li class="dropdown">
+                                    <a href="careers.html">Resource Center <i class="fa-solid fa-chevron-down"></i></a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="">Resource 1</a></li>
+                                        <li><a href="">Resource 2</a></li>
+                                        <li><a href="">Resource 3</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="contact.html">Contact</a>
                                 </li>
                             </ul>
                         </nav>
@@ -160,7 +175,7 @@
             </div>
         </header>
 
-        <section class="main-slider-one">
+        <!-- <section class="main-slider-one">
             <div class="main-slider-one__wrapper">
                 <div class="main-slider-one__carousel cleenhearts-owl__carousel owl-carousel" data-owl-options='{
                     "loop": true,
@@ -265,7 +280,262 @@
                     </div>
                 </div>
             </div>
+        </section> -->
+        <section class="hero-slider hero-style-1">
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="slide-inner slide-bg-image" data-background="images/main-slider/slide-1.jpg">
+                            <div class="container">
+
+                                <div data-swiper-parallax="300" class="slide-title">
+                                    <h2>They Are Wait For Some Food.</h2>
+                                </div>
+                                <div data-swiper-parallax="400" class="slide-text">
+                                    <p>It is a long established fact that a reader will be distracted the readable
+                                        content of a page when looking at its layout point of using of letters, as
+                                        opposed.</p>
+                                </div>
+                                <div class="clearfix"></div>
+                                <div data-swiper-parallax="500" class="slide-btns">
+                                    <a href="#" class="theme-btn">Donate Now</a>
+                                </div>
+                            </div>
+                            <div class="slide-shape">
+                                <img src="images/shapes/shape.png" alt="">
+                            </div>
+                        </div>
+                        <!-- end slide-inner -->
+                    </div>
+                    <!-- end swiper-slide -->
+                    <div class="swiper-slide">
+                        <div class="slide-inner slide-bg-image" data-background="images/main-slider/slide-2.jpg">
+                            <div class="container">
+
+                                <div data-swiper-parallax="300" class="slide-title">
+                                    <h2>They Are Wait For Some Food.</h2>
+                                </div>
+                                <div data-swiper-parallax="400" class="slide-text">
+                                    <p>It is a long established fact that a reader will be distracted the readable
+                                        content of a page when looking at its layout point of using of letters, as
+                                        opposed.</p>
+                                </div>
+                                <div class="clearfix"></div>
+                                <div data-swiper-parallax="500" class="slide-btns">
+                                    <a href="#" class="theme-btn">Donate Now</a>
+                                </div>
+                            </div>
+                            <div class="slide-shape">
+                                <img src="images/shapes/shape.png" alt="">
+                            </div>
+                        </div>
+                        <!-- end slide-inner -->
+                    </div>
+                    <!-- end swiper-slide -->
+                    <div class="swiper-slide">
+                        <div class="slide-inner slide-bg-image" data-background="images/main-slider/slide-3.jpg">
+                            <div class="container">
+
+                                <div data-swiper-parallax="300" class="slide-title">
+                                    <h2>They Are Wait For Some Food.</h2>
+                                </div>
+                                <div data-swiper-parallax="400" class="slide-text">
+                                    <p>It is a long established fact that a reader will be distracted the readable
+                                        content of a page when looking at its layout point of using of letters, as
+                                        opposed.</p>
+                                </div>
+                                <div class="clearfix"></div>
+                                <div data-swiper-parallax="500" class="slide-btns">
+                                    <a href="#" class="theme-btn">Donate Now</a>
+                                </div>
+                            </div>
+                            <div class="slide-shape">
+                                <img src="images/shapes/shape.png" alt="">
+                            </div>
+                        </div>
+                        <!-- end slide-inner -->
+                    </div>
+                    <!-- end swiper-slide -->
+                </div>
+                <!-- end swiper-wrapper -->
+                <!-- swipper controls -->
+                <div class="swiper-pagination"></div>
+            </div>
         </section>
+
+        <!-- ABOUT SECTION START -->
+        <section class="ul-about ul-about-2 section-space ul-section-spacing wow animate__fadeInUp">
+            <div class="ul-container">
+                <div class="row row-cols-md-2 row-cols-1 align-items-center gy-4 ul-about-row">
+                    <div class="col">
+                        <div class="ul-about-imgs ul-about-2-img">
+                            <div class="img-wrapper">
+                                <img src="images/about/about-2-img.jpg" alt="Image">
+                            </div>
+
+                            <div class="ul-about-2-stat">
+                                <span class="number">15+</span>
+                                <span class="txt">Years Of Experience</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- txt -->
+                    <div class="col">
+                        <div class="ul-about-txt">
+                            <span class="ul-section-sub-title ul-section-sub-title--2">About US</span>
+                            <h2 class="ul-section-title">Khidmat Charitable Trust KCT</h2>
+                            <p class="ul-section-descr">Khidmat Charitable Trust (KCT) is a Non-Government Organization
+                                (NGO) registered under the Government of India’s Public Trust Registration Act of 1950
+                                on 12 December 2001. Based in Mumbai, KCT’s registration number is E19852.</p>
+                            <p class="ul-section-descr">In 2001, by the grace of Almighty Allah, we established our
+                                start-up with the key objective of providing every possible medical aid to the
+                                underprivileged and deserving section of our society. Our aim is to provide them moral
+                                and economical support during the treatment of a critical illness.</p>
+
+
+                            <a href="about.html" class="ul-btn"><i
+                                    class="flaticon-fast-forward-double-right-arrows-symbol"></i> Explore More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- ABOUT SECTION END -->
+        <section class="section-space mission-vision">
+            <div class="mission">
+                <img src="images/gallery/gallery-slide-1.jpg" alt="Mission Image">
+                <div class="text-box">
+                    <h4>Our Mission</h4>
+                    <h3>Empowering Communities, <br> Fostering Sustainable Change</h3>
+                    <p>Our mission is to promote sustainable and inclusive community development by empowering
+                        vulnerable populations and supporting the achievement of the Sustainable Development Goals.</p>
+                </div>
+            </div>
+
+            <div class="vision">
+                <div class="text-box">
+                    <h4>Our Vision</h4>
+                    <h3>Empowering Lives, <br> Building Hope</h3>
+                    <p>Our vision is to empower underprivileged communities and create lasting positive impact through
+                        sustainable development.</p>
+                </div>
+                <img src="images/gallery/gallery-slide-12.jpg" alt="Vision Image">
+            </div>
+        </section>
+
+        <section class="section-space">
+            <h2 class="sec-title__tagline sec-title__tagline--center">Number Of Beneficiaries</h2>
+            <div class="ben-counts">
+                <div class="count-box" data-aos="fade-up" data-aos-duration="1000">
+                    <div class="icon-container">
+                        <img src="images/shapes/bg-shape1.png" alt="Shape" class="shape">
+                        <img src="images/svg 1.svg" alt="Icon" class="icon">
+                    </div>
+                    <div>
+                        <p class="numbers1" data-val="4597+">4000</p>
+                        <p class="below-number">Medical Aid</p>
+                    </div>
+                </div>
+
+                <div class="count-box" data-aos="fade-up" data-aos-duration="1500">
+                    <div class="icon-container">
+                        <img src="images/shapes/bg-shape2.png" alt="Shape" class="shape">
+                        <img src="images/svg 2.svg" alt="Icon" class="icon">
+                    </div>
+                    <div>
+                        <p class="numbers1" data-val="8945+">8000</p>
+                        <p class="below-number">Cancer</p>
+                    </div>
+                </div>
+
+                <div class="count-box" data-aos="fade-up" data-aos-duration="2000">
+                    <div class="icon-container">
+                        <img src="images/shapes/bg-shape3.png" alt="Shape" class="shape">
+                        <img src="images/svg 3.svg" alt="Icon" class="icon">
+                    </div>
+                    <div>
+                        <p class="numbers" data-val="10K+">000K+</p>
+                        <p class="below-number">Dialysis</p>
+                    </div>
+                </div>
+
+                <div class="count-box" data-aos="fade-up" data-aos-duration="2500">
+                    <div class="icon-container">
+                        <img src="images/shapes/bg-shape4.png" alt="Shape" class="shape">
+                        <img src="images/svg 4.svg" alt="Icon" class="icon">
+                    </div>
+                    <div>
+                        <p class="numbers" data-val="5CR+">000CR+</p>
+                        <p class="below-number">Education</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-space">
+            <div class="partner-container">
+                <h2 class="sec-title__tagline sec-title__tagline--center">Our Trusted Partners</h2>
+                <p class="partner-subtitle">Collaborating with the best to make a difference</p>
+                <div class="partner-logos">
+                    <a href="https://www.aimym.org" target="_blank" class="partner">
+                        <img src="images/logo/aimym.jpeg" alt="AIMYM">
+                        <span>AIMYM</span>
+                    </a>
+                    <a href="https://www.carf.org" target="_blank" class="partner">
+                        <img src="images/logo/carf.webp" alt="CARF">
+                        <span>CARF</span>
+                    </a>
+                    <a href="https://www.maf.org" target="_blank" class="partner">
+                        <img src="images/logo/maf.png" alt="MAF">
+                        <span>MAF</span>
+                    </a>
+                    <a href="https://www.ummeed.org" target="_blank" class="partner">
+                        <img src="images/logo/ummeed.png" alt="Ummeed">
+                        <span>Ummeed</span>
+                    </a>
+                    <a href="https://www.redcross.org" target="_blank" class="partner">
+                        <img src="images/logo/redcross.jpg" alt="Red Cross">
+                        <span>Red Cross</span>
+                    </a>
+                    <a href="https://www.unicef.org" target="_blank" class="partner">
+                        <img src="images/logo/unicef.webp" alt="UNICEF">
+                        <span>UNICEF</span>
+                    </a>
+                </div>
+                <div class="partner-logos">
+                    <a href="https://www.aimym.org" target="_blank" class="partner">
+                        <img src="images/logo/aimym.jpeg" alt="AIMYM">
+                        <span>AIMYM</span>
+                    </a>
+                    <a href="https://www.carf.org" target="_blank" class="partner">
+                        <img src="images/logo/carf.webp" alt="CARF">
+                        <span>CARF</span>
+                    </a>
+                    <a href="https://www.maf.org" target="_blank" class="partner">
+                        <img src="images/logo/maf.png" alt="MAF">
+                        <span>MAF</span>
+                    </a>
+                    <a href="https://www.ummeed.org" target="_blank" class="partner">
+                        <img src="images/logo/ummeed.png" alt="Ummeed">
+                        <span>Ummeed</span>
+                    </a>
+                    <a href="https://www.redcross.org" target="_blank" class="partner">
+                        <img src="images/logo/redcross.jpg" alt="Red Cross">
+                        <span>Red Cross</span>
+                    </a>
+                    <a href="https://www.unicef.org" target="_blank" class="partner">
+                        <img src="images/logo/unicef.webp" alt="UNICEF">
+                        <span>UNICEF</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+        
+        
+
+
+
         <section class="section-space beneficiaries">
             <h6 class="sec-title__tagline sec-title__tagline--center">
                 NUMBER OF BENEFICIARIES
@@ -1492,7 +1762,8 @@
                                             <i class="fab fa-facebook-f" aria-hidden="true"></i>
                                             <span class="sr-only">Facebook</span>
                                         </a>
-                                        <a href="https://www.instagram.com/khidmat_trust?igsh=MXU0eHg3NXNva245cw==" target="_blank">
+                                        <a href="https://www.instagram.com/khidmat_trust?igsh=MXU0eHg3NXNva245cw=="
+                                            target="_blank">
                                             <i class="fab fa-instagram" aria-hidden="true"></i>
                                             <span class="sr-only">Instagram</span>
                                         </a>
@@ -1500,8 +1771,8 @@
                                             <img src="images/X_logo 1.svg" alt="X Logo" class="x-logo" />
                                             <span class="sr-only">Twitter</span>
                                         </a>
-                                        <a href="https://youtube.com/@khidmattrust?si=CQkQ9vSkc3UAO2Zp" target="_blank" target="_blank"
-                                            aria-hidden="true">
+                                        <a href="https://youtube.com/@khidmattrust?si=CQkQ9vSkc3UAO2Zp" target="_blank"
+                                            target="_blank" aria-hidden="true">
                                             <i class="fab fa-youtube"></i>
                                             <span class="sr-only">Youtube</span>
                                         </a>
@@ -1859,6 +2130,10 @@
     <script src="js/cleenhearts.js"></script>
 
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery-plugin-collection.js"></script>
+    <script src="js/script.js"></script>
 
     <script>
         AOS.init();
